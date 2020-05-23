@@ -1,0 +1,16 @@
+@import "../global";
+@import "./_github";
+
+.markdown-body {
+  ul,
+  li,
+  dd {
+    list-style: initial;
+  }
+  ol {
+    list-style-type: decimal;
+  }
+  ol li {
+    list-style-type: decimal;
+  }
+}

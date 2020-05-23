@@ -1,0 +1,47 @@
+.side-bar {
+  display: inline-block;
+  box-sizing: border-box;
+  width: $SIDEBAR_WIDTH;
+  height: 100%;
+  z-index: 1;
+  line-height: 64px;
+
+  .title {
+    color: #666;
+    padding-left: 24px;
+    font-size: 22px;
+  }
+
+  .divider {
+    height: 1px;
+    background-color: #bbb;
+  }
+
+  .menu-list {
+    user-select: none;
+    padding-top: 24px;
+    .menu-item {
+      font-size: 14px;
+      line-height: 42px;
+      border-left: 6px solid transparent;
+
+      a {
+        display: inline-block;
+        width: 100%;
+        font-size: 18px;
+        padding-left:47px;
+      }
+
+      &:hover {
+        background-color: #dfdfdf;
+      }
+
+      &.cur {
+        border-left: 6px solid $GREEN;
+        a {
+          color:$GREEN;
+        }
+      }
+    }
+  }
+}

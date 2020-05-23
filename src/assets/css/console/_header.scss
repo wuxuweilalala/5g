@@ -1,0 +1,133 @@
+.mod-header {
+  background-color: #333 ;
+  font-size: 16px;
+  position: relative;
+  box-sizing:border-box;
+  color:#fff;
+  z-index:10;
+  .layout {
+    position: relative;
+    width: 100%;
+    margin: 0;
+  }
+  &-nav {
+    padding-top: 14px;
+    position: relative;
+    float:left;
+    li {
+      position: relative;
+      float: left;
+      line-height:1;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    .top-cat {
+      text-align: center;
+      box-sizing: border-box;
+      padding-bottom: 26px;
+      padding-top: 10px;
+      margin:0 18px;
+      h2 {
+        width: 84px;
+        position:relative;
+        a {
+          display: block;
+          padding: 0;
+          position: relative;
+        }
+      }
+      &.cur {
+        border-bottom:3px solid  #fff;
+      }
+    }
+  }
+  &-user, &-serv, &-solu{
+    float:right;
+    margin-right: 48px;
+    line-height:25px;
+    padding-top:21px;
+    .console{
+      display:inline-block;
+      padding:0 20px;
+      border-right:1px solid #fff;
+    }
+    .user,.serv,.solu{
+      padding:0 20px;
+      display:inline-block;
+      vertical-align: bottom;
+      position:relative;
+      em{
+        display:inline-block;
+        max-width:100px;
+        @extend %text-overflow;
+        vertical-align: bottom;
+      }
+      i{
+        position:relative;
+        display:inline-block;
+        @include arrow(bottom, 9px, #fff, #333, 2px);
+        margin-left:5px;
+      }
+      .dropdown{
+        position:absolute;
+        padding-top:23px;
+        top:22px;
+        left:0;
+        width:100%;
+
+        text-align:center;
+        display:none;
+        a{
+          display:block;
+          line-height:40px;
+          background-color:#373d41;
+        }
+      }
+      &:hover{
+        .dropdown{
+          display:block;
+        }
+      }
+    }
+  }
+  &-action {
+    display: inline-block;
+
+    .top-cat {
+      margin-left: 24px;
+    }
+
+  }
+  .mod-header-serv,#nav-serv,.mod-header-solu,#nav-solu {
+    padding-top: 10px;
+    padding-bottom: 26px;
+    margin: 0 18px;
+    text-align: center;
+
+    &.cur {
+      border-bottom:3px solid  #fff;
+    }
+
+    .dropdown{
+      position:absolute;
+      padding-top:23px;
+      top:18px;
+      left:0;
+      width:100%;
+
+      text-align:center;
+      display:none;
+      a{
+        display:block;
+        line-height:40px;
+        background-color:#373d41;
+      }
+    }
+    &:hover{
+      .dropdown{
+        display:block;
+      }
+    }
+  }
+}

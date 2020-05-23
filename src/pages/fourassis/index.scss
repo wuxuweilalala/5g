@@ -1,0 +1,163 @@
+.fourassis-box {
+  padding: 32px 0 0 0px;
+  background: url("../../assets/img/fourassis/bg_01.png") no-repeat;
+  background-size: cover;
+  .fourassis-title {
+    margin: 0 0 46px 55px;
+    text-align: left;
+    .title-p {
+      font-size: 22px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: rgba(128, 128, 128, 1);
+      line-height: 35px;
+      .title-strong {
+        color: rgba(28, 95, 194, 1);
+      }
+    }
+  }
+}
+.four-left-list {
+  overflow: hidden;
+  padding-bottom: 90px;
+  .menu-left {
+    overflow: hidden;
+    float: left;
+    margin-right: 81px;
+  }
+  .ant-menu {
+    margin-top: 0;
+    &-item {
+      height: 153px;
+      text-align: left;
+      padding-left: 56px !important;
+    }
+  }
+  .layout .four-right-box:nth-child(3n) {
+    margin-right: 0;
+  }
+  .four-right-box {
+    float: left;
+    h1 {
+      font-size: 34px;
+      font-family: Microsoft YaHei;
+      font-weight: bold;
+      color: rgba(38, 72, 144, 1);
+      margin-bottom: 40px;
+    }
+    .four-right-ul {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row;
+      flex-grow: 3;
+      flex-wrap: wrap;
+    }
+    .four-right-box {
+      width: 330px;
+      height: 321px;
+      // margin-right: 105px;
+      .right-box {
+        margin-top: 123px;
+        width: 252px;
+        margin-left: 39px;
+        h3 {
+          font-family: MicrosoftYaHei;
+          font-size: 24px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 24px;
+          letter-spacing: 0px;
+          color: #ffffff;
+          margin-bottom: 10px;
+        }
+        p {
+          font-family: MicrosoftYaHei;
+          font-size: 16px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 16px;
+          letter-spacing: 0px;
+          color: #ffffff;
+          text-align: justify;
+        }
+      }
+      .hvr-wobble-bottom {
+        display: block;
+      }
+    }
+    .list-bg-1 {
+      background: url("../../assets/img/fourassis/bg-1.png") no-repeat;
+      background-size: cover;
+    }
+    .list-bg-2 {
+      background: url("../../assets/img/fourassis/bg-2.png") no-repeat;
+      background-size: cover;
+    }
+    .list-bg-3 {
+      background: url("../../assets/img/fourassis/bg-3.png") no-repeat;
+      background-size: cover;
+    }
+    .list-bg-4 {
+      background: url("../../assets/img/fourassis/bg-4.png") no-repeat;
+      background-size: cover;
+    }
+    .list-bg-5 {
+      background: url("../../assets/img/fourassis/bg-5.png") no-repeat;
+      background-size: cover;
+    }
+    .list-bg-6 {
+      background: url("../../assets/img/fourassis/bg-6.png") no-repeat;
+      background-size: cover;
+    }
+    .list-bg-7 {
+      background: url("../../assets/img/fourassis/bg-7.png") no-repeat;
+      background-size: cover;
+    }
+    .no-margin {
+      margin: 0;
+    }
+  }
+}
+.fourassis-btm-list {
+  padding: 100px 0;
+  background: url("../../assets/img/fourassis/bg_02.png") no-repeat;
+  background-size: cover;
+  .btm-box {
+    text-align: left;
+    margin-bottom: 70px;
+    .btm-bottom {
+      margin-bottom: 26px;
+      h3 {
+        margin-bottom: 0;
+      }
+      .box-line {
+        display: inline-block;
+        width: 2px;
+        height: 29px;
+        background: rgba(50, 93, 181, 1);
+        opacity: 0.7;
+        vertical-align: bottom;
+        margin-right: 29px;
+      }
+      h3 {
+        display: inline-block;
+        font-size: 26px;
+        height: 26px;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        color: #5991DA;
+        line-height: 26px;
+        font-weight:bold;
+        margin-left: 8px;
+      }
+    }
+    .btm-box-list {
+      list-style: disc;
+      font-size: 20px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: rgba(128, 128, 128, 1);
+      line-height: 36px;
+    }
+  }
+}

@@ -1,0 +1,157 @@
+.consultation {
+  // padding: 33px 0 0px 55px;
+  padding-top: 33px;
+  display: flex;
+  // overflow: hidden;
+  .top-content {
+    text-align: left;
+    font-size: 22px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(128, 128, 128, 1);
+    line-height: 35px;
+    span {
+      color: #1c5fc2;
+    }
+  }
+  .left-list {
+    // overflow: hidden;
+    min-height: 1300px;
+    overflow: hidden;
+    margin-left: -225px;
+    flex-shrink: 0;
+    .ant-menu {
+      margin-top: 20px;
+    }
+    .ant-menu .ant-menu-item {
+      //   border-bottom: 2px solid #1f69c8;
+      font-size: 24px;
+      font-family: Microsoft YaHei;
+      font-weight: bold;
+      color: rgba(31, 105, 200, 1);
+      line-height: 35px;
+      text-align: left;
+      padding-left: 0 !important;
+    }
+    .ant-menu-item::before {
+      display: table;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      border-bottom: 2px solid #1f69c8;
+      width: 98px;
+    }
+    .ant-menu-inline .ant-menu-item:not(:last-child) {
+      margin-bottom: 152px;
+    }
+  }
+  .con-box {
+    overflow: hidden;
+    padding: 18px 0 70px;
+    margin-left: 72px;
+    flex-grow: 1;
+      img {
+        border: 0;
+    width: 320px;
+    height: 180px;
+      }
+  }
+  .right-container {
+      // margin-bottom: 10px;
+    .content-box {
+      text-align: left;
+      .box-time {
+        font-size: 18px;
+        font-family: Microsoft YaHei;
+        font-weight: 600;
+        color: rgba(28, 95, 194, 1);
+        line-height: 35px;
+        margin-bottom: 10px;
+      }
+      .article-box {
+        border-top: 1px solid rgba(31, 105, 200, 0.5);
+        display: flex;
+        justify-content: space-between;
+        .article-box-left {
+          .box-left-title {
+            font-size: 20px;
+            font-family: Microsoft YaHei;
+            font-weight: 400;
+            color: rgba(28, 95, 194, 1);
+            line-height: 35px;
+            margin: 14px 0;
+          }
+          .box-left-text {
+            font-size: 16px;
+            font-family: Microsoft YaHei;
+            font-weight: 400;
+            color: rgba(128, 128, 128, 1);
+            line-height: 35px;
+          }
+        }
+        .article-box-right {
+          margin: 70px 0 0 34px;
+        }
+      }
+    }
+  }
+  .right-container:last-child {
+    margin-bottom: 0px;
+  }
+}
+.pagination {
+  overflow: hidden;
+  margin-top: 70px;
+//   .ant-pagination-next {
+//     width:92px;
+//     height:28px;
+//     background: rgba(28, 95, 194, 0);
+//     border: 1px solid rgba(28, 95, 194, 1);
+//   }
+}
+.active-bottom {
+  text-align: right;
+  border-bottom: 1px solid rgba(31, 105, 200, 0.5);
+  padding-bottom: 59px;
+  margin-top: 20px;
+  &-title {
+    font-size: 22px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(28, 95, 194, 1);
+    line-height: 35px;
+    margin-bottom: 23px;
+  }
+  &-text {
+    margin-bottom: 23px;
+    font-size: 18px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(128, 128, 128, 1);
+    line-height: 35px;
+  }
+  &-wx {
+    width: 180px;
+    height: 180px;
+    display: inline-block;
+    text-align: right;
+    box-shadow: 0px 3px 8px 0px rgba(225, 226, 229, 0.99);
+    img {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1344px) {
+  .consultation .left-list{
+    margin-left: -15px;
+  }
+}
+// @media screen and (min-aspect-ratio: 16/9) {
+//   .consultation {
+//     .con-box {
+//       // padding-left: 155px;
+//     }
+//   }
+// }

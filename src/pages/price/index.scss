@@ -1,0 +1,193 @@
+.price {
+  padding: 99px 0;
+  position: relative;
+  background: url("../../assets/img/price/bg.png") no-repeat;
+  background-size: cover;
+  .price-left {
+    overflow: hidden;
+    float: left;
+    margin-left: -150px;
+    .ant-menu {
+      margin-top: 0;
+      .price-title {
+        width: 256px;
+        font-size: 24px;
+        text-align: left;
+        font-family: Microsoft YaHei;
+        font-weight: bold;
+        color: rgba(255, 255, 255, 1);
+        line-height: 35px;
+        background: url("../../assets/img/price/title_bg.png") no-repeat;
+        background-size: cover;
+        padding-left: 24px !important;
+      }
+    }
+  }
+  .price-right {
+    float: left;
+    position: relative;
+    min-height: 1400px;
+    .price-box {
+      width: 1200px;
+      position: absolute;
+      text-align: left;
+      h1 {
+        font-size: 45px;
+        font-family: Microsoft YaHei;
+        font-weight: bold;
+        color: rgba(38, 72, 144, 1);
+        line-height: 45px;
+        margin-bottom: 45px;
+      }
+      &-content {
+        font-size: 20px;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        color: rgba(128, 128, 128, 1);
+      }
+      .table-box {
+        .magnitude {
+          margin-top: 50px;
+        }
+        .charing {
+          margin-top: 44px;
+        }
+        .product-box {
+          margin-top: 44px;
+          background: rgba(255, 255, 255, 0.34);
+          border: 2px solid rgba(255, 255, 255, 1);
+          &-list {
+            display: flex;
+            margin: 25px;
+            justify-content: space-between;
+          }
+          .commonBox {
+            width: 560px;
+            height: 177px;
+            background: rgba(255, 255, 255, 1);
+            padding: 40px 99px;
+            display: flex;
+            justify-content: center;
+            flex-flow: column;
+            text-align: left;
+            h5 {
+              display: flex;
+              align-items: center;
+              font-size: 20px;
+              font-family: Microsoft YaHei;
+              font-weight: 400;
+              color: rgba(47, 50, 80, 1);
+              line-height: 35px;
+            }
+            p {
+              font-size: 20px;
+              font-family: Microsoft YaHei;
+              font-weight: 400;
+              color: rgba(128, 128, 128, 1);
+              line-height: 25px;
+              margin-top: 28px;
+            }
+          }
+          .box-left {
+            .icon-file {
+              background: url("../../assets/img/price/icon-2.png") no-repeat;
+              background-size: contain;
+              margin-right: 9px;
+            }
+          }
+          .box-right {
+            .icon-obj {
+              width: 33px;
+              height: 23px;
+              background: url("../../assets/img/price/icon-3.png") no-repeat;
+              background-size: contain;
+              margin-right: 9px;
+            }
+          }
+          .comIcon {
+            display: inline-block;
+            width: 23px;
+            height: 27px;
+          }
+        }
+        .commonColor {
+          .ff-color {
+            font-size: 26px;
+            font-family: Microsoft YaHei;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 1);
+            line-height: 35px;
+            display: flex;
+            align-items: center;
+            .shu-line {
+              display: inline-block;
+              width: 2px;
+              height: 26px;
+              vertical-align: middle;
+              margin-right: 7px;
+              background: rgba(255, 255, 255, 1);
+            }
+            .small-size {
+              font-size: 18px;
+              font-weight: 400;
+              color: rgba(255, 255, 255, 1);
+              line-height: 35px;
+            }
+          }
+        }
+        .ant-table-title {
+          background: url("../../assets/img//price/title_bg.png") no-repeat;
+          background-size: cover;
+          color: #fff;
+          padding: 9px 9px;
+        }
+        .ant-table-container {
+            border: 2px solid white;
+            padding: 30px 30px;
+        }
+        .ant-table {
+            background: rgba(255, 255, 255, 0.34);
+        }
+        .ant-table-content .ant-table-thead th:first-child {
+          width: 235px;
+        }
+        .ant-table-tbody > tr > td {
+          color: #808080;
+        }
+      }
+    }
+  }
+  .ant-menu {
+    font-size: 22px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    line-height: 35px;
+    .ant-menu-item {
+      text-align: left;
+      padding-left: 34px !important;
+      color: rgba(128, 128, 128, 1);
+      font-size: 22px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+    }
+  }
+  .ant-menu-inline {
+    border-right: 1px solid #e8e8e8;
+    .ant-menu-submenu {
+      text-align: left;
+      color: #1c5fc2;
+      font-size: 22px;
+      font-family: Microsoft YaHei;
+      font-weight: bold;
+    }
+    .ant-menu-submenu-title {
+      font-size: 22px;
+    }
+    .ant-menu-item:last-child {
+      margin-bottom: 22px;
+    }
+  }
+  .ant-menu-submenu > .ant-menu {
+    background: 0;
+  }
+}

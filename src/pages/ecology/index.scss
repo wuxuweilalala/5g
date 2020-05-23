@@ -1,0 +1,554 @@
+.ecology-container {
+  padding: 70px 0 70px 0;
+  overflow: hidden;
+  background: url("../../assets/img/ecology/bg_01.png") no-repeat;
+  background-size: cover;
+  h3 {
+    margin-bottom: 0 !important;
+  }
+  h1 {
+    font-size: 34px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: rgba(38, 72, 144, 1);
+    line-height: 29px;
+    margin-bottom: 61px;
+  }
+  .eco-card {
+    padding: 52px 35px 41px 51px;
+    background: #fff;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    flex-grow: 3;
+    flex-wrap: wrap;
+    .eco-list {
+      text-align: left;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+      width: 370px;
+      height: 118px;
+      padding: 43px;
+      .econ-icon-1 {
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        background: url("../../assets/img/ecology/icon-1.png") no-repeat;
+        background-size: contain;
+        margin-right: 25px;
+      }
+      .econ-icon-2 {
+        display: inline-block;
+        width: 50px;
+        height: 37px;
+        background: url("../../assets/img/ecology/icon-2.png") no-repeat;
+        background-size: contain;
+        margin-right: 19px;
+      }
+      .econ-icon-3 {
+        display: inline-block;
+        width: 40px;
+        height: 48px;
+        background: url("../../assets/img/ecology/icon-3.png") no-repeat;
+        background-size: contain;
+        margin-right: 25px;
+      }
+      .econ-icon-4 {
+        display: inline-block;
+        width: 52px;
+        height: 41px;
+        background: url("../../assets/img/ecology/icon-4.png") no-repeat;
+        background-size: contain;
+        margin-right: 19px;
+      }
+      .econ-icon-5 {
+        display: inline-block;
+        width: 46px;
+        height: 39px;
+        background: url("../../assets/img/ecology/icon-5.png") no-repeat;
+        background-size: contain;
+        margin-right: 22px;
+      }
+      .econ-icon-6 {
+        display: inline-block;
+        width: 40px;
+        height: 45px;
+        background: url("../../assets/img/ecology/icon-3.png") no-repeat;
+        background-size: contain;
+        margin-right: 21px;
+      }
+      .econ-icon-7 {
+        display: inline-block;
+        width: 40px;
+        height: 33px;
+        background: url("../../assets/img/ecology/icon-7.png") no-repeat;
+        background-size: contain;
+        margin-right: 25px;
+      }
+      .econ-icon-8 {
+        display: inline-block;
+        width: 50px;
+        height: 37px;
+        background: url("../../assets/img/ecology/icon-8.png") no-repeat;
+        background-size: contain;
+        margin-right: 16px;
+      }
+      .econ-icon-9 {
+        display: inline-block;
+        width: 51px;
+        height: 37px;
+        background: url("../../assets/img/ecology/icon-9.png") no-repeat;
+        background-size: contain;
+        margin-right: 17px;
+      }
+      .econ-icon-10 {
+        display: inline-block;
+        width: 46px;
+        height: 39px;
+        background: url("../../assets/img/ecology/icon-10.png") no-repeat;
+        background-size: contain;
+        margin-right: 21px;
+      }
+      .econ-icon-11 {
+        display: inline-block;
+        width: 52px;
+        height: 52px;
+        background: url("../../assets/img/ecology/icon-11.png") no-repeat;
+        background-size: contain;
+        margin-right: 21px;
+      }
+      .econ-icon-12 {
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        background: url("../../assets/img/ecology/icon-12.png") no-repeat;
+        background-size: contain;
+        margin-right: 14px;
+      }
+      .eco-item {
+        position: relative;
+        h3 {
+          font-size: 26px;
+          font-family: Microsoft YaHei;
+          font-weight: 400;
+          color: rgba(31, 105, 200, 1);
+          line-height: 35px;
+        }
+        &-text {
+          font-size: 14px;
+          font-family: Microsoft YaHei;
+          font-weight: 400;
+          color: rgba(128, 128, 128, 1);
+          line-height: 22px;
+          text-align: justify;
+        }
+        .eco-posi {
+          position: absolute;
+          top: 80px;
+        }
+      }
+    }
+    .eco-list:hover {
+      .eco-item .eco-pad {
+        padding: -4px !important;
+        font-size: 14px;
+      }
+      .eco-posi {
+        left: -105px;
+        top: -30px;
+        width: 349px;
+        height: 100px;
+        background: #fff;
+        animation-name: fadeIn;
+        padding: 14px;
+      }
+    }
+    .eco-line {
+      display: inline-block;
+      width: 100%;
+      height: 1px;
+      background: rgba(225, 226, 230, 1);
+      margin: 22px 0;
+    }
+    .no-margin {
+      margin: 0;
+    }
+  }
+}
+.ecology-assis {
+  padding: 70px 0;
+  overflow: hidden;
+  background: url("../../assets/img/ecology/bg_02.png") no-repeat;
+  background-size: cover;
+  .hvr-pop {
+    display: block !important;
+  }
+  h1 {
+    font-size: 34px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: rgba(38, 72, 144, 1);
+    line-height: 34px;
+    margin-bottom: 43px;
+  }
+
+  .swiper-container {
+    --swiper-theme-color: #ff6600; /* 设置Swiper风格 */
+    --swiper-navigation-color: #00ff33; /* 单独设置按钮颜色 */
+    --swiper-navigation-size: 30px; /* 设置按钮大小 */
+  }
+  .assis-cont {
+    text-align: center;
+    background: url("../../assets/img//ecology/2.png") no-repeat;
+    background-size: cover;
+    height: 426px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    .assis-left {
+      .ability-item {
+        text-align: left;
+        display: block;
+        h3 {
+          font-size: 26px;
+          font-family: Microsoft YaHei;
+          font-weight: 400;
+          color: rgba(31, 105, 200, 1);
+          line-height: 35px;
+          margin-bottom: 13px;
+        }
+        .item-text {
+          width: 276px;
+          font-size: 14px;
+          font-family: Microsoft YaHei;
+          font-weight: 400;
+          color: rgba(128, 128, 128, 1);
+          line-height: 22px;
+          text-align: justify;
+        }
+      }
+      .item-1 {
+        padding: 20px 35px 33px 30px;
+        margin-bottom: 147px;
+      }
+      .item-2 {
+        padding: 20px 26px 18px 30px;
+      }
+    }
+    .assis-right {
+      width: 324px;
+      .ability-item {
+        text-align: left;
+        display: block;
+        h3 {
+          font-size: 26px;
+          font-family: Microsoft YaHei;
+          font-weight: 400;
+          color: rgba(31, 105, 200, 1);
+          line-height: 35px;
+          margin-bottom: 13px;
+        }
+        .item-text {
+          width: 276px;
+          font-size: 14px;
+          font-family: Microsoft YaHei;
+          font-weight: 400;
+          color: rgba(128, 128, 128, 1);
+          line-height: 22px;
+        }
+      }
+      .item-3 {
+        padding: 14px 18px 33px 30px;
+        margin-bottom: 136px;
+        margin-top: 4px;
+      }
+      .item-4 {
+        padding: 14px 18px 33px 30px;
+      }
+    }
+    .mk-box {
+      position: absolute;
+      .mk-icon {
+        width: 65px;
+        height: 65px;
+        display: inline-block;
+        position: absolute;
+      }
+      .icon-1 {
+        background: url('../../assets/img/ecology/four/3.png') no-repeat;
+        background-size: cover;
+        left: 412px;
+        top: 52px;
+      }
+      .icon-2 {
+        background: url('../../assets/img/ecology/four/2.png') no-repeat;
+        background-size: cover;
+        left: 726px;
+        top: 52px;
+      }
+      .icon-3 {
+        background: url('../../assets/img/ecology/four/4.png') no-repeat;
+        background-size: cover;
+        left: 412px;
+        top: 306px;
+      }
+      .icon-4 {
+        background: url('../../assets/img/ecology/four/1.png') no-repeat;
+        background-size: cover;
+        left: 726px;
+        top: 306px;
+      }
+    }
+    .mk-box-2 {
+      position: absolute;
+        width: 210px;
+        height: 210px;
+        position: absolute;
+        background: rgba(31, 105, 200, 0.5);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      .icon-5 {
+        width:166px;
+        height:166px;
+        background: #1F69C8;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // left: 412px;
+        // top: 52px;
+        i {
+          background-image: url('../../assets/img/ecology/four/5.png');
+          background-size: cover;
+          width: 80px;
+          height: 80px;
+          display: inline-block;
+        }
+      }
+    }
+    .mk2:hover {
+      transform: rotate(360deg) scale(1.3);
+      transition: transform 1s ease;
+    }
+    .mk3:hover {
+      // transform: rotate(360deg);
+      transition: transform 1.5s ease;
+    }
+    .mk4:hover {
+      transform: rotate(360deg) scale(1.08);
+      transition: transform 1.5s ease;
+    }
+  }
+}
+.ecology-pro {
+  background: url("../../assets//img/ecology/bg_03.png") no-repeat;
+  background-size: cover;
+  padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  .pro-container {
+    width: 1218px;
+    position: relative;
+    margin: 0 auto;
+    .frist_project {
+      background: url('../../assets/img/ecology/frist_project.png') no-repeat;
+      background-size: cover;
+      height: 1493px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  h1 {
+    font-size: 34px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: rgba(38, 72, 144, 1);
+    line-height: 34px;
+    margin-bottom: 50px;
+  }
+  .swiper-button-disabled {
+    opacity: 0.5 !important;
+  }
+  .swiper-button-prev {
+    left: -81px;
+    // background-color: #fc6;
+    background: url("../../assets/img//ecology/left.png") no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    width: 72px;
+    height: 73px;
+    outline: none;
+    &::after {
+      content: "";
+    }
+  }
+  .swiper-button-next {
+    right: -81px;
+    width: 72px;
+    height: 73px;
+    background: url("../../assets/img//ecology/right.png") no-repeat;
+    background-size: cover;
+    outline: none;
+    border-radius: 50%;
+    &::after {
+      content: "";
+    }
+  }
+  .pro-box {
+    // display: flex;
+    // justify-content: space-around;
+    margin: 0 auto;
+    .img-wh {
+      width: 244px;
+      height: 363px;
+    }
+    .swiper-slide {
+      img {
+        height: 425px;
+      }
+    }
+    // width: 1218px;
+    // width: 1200px;
+    // padding: 0 31px;
+    // position: relative;
+    // .pro-icon-left {
+    //   display: block;
+    //   width: 72px;
+    //   height: 73px;
+    //   background: url("../../assets/img//ecology/left.png") no-repeat;
+    //   background-size: cover;
+    //   border-radius: 50%;
+    //   margin: 105px 30px 0 0;
+    //   position: absolute;
+    //   left: -102px;
+    // }
+    .pro-icon-right {
+      display: block;
+      width: 72px;
+      height: 73px;
+      background: url("../../assets/img//ecology/right.png") no-repeat;
+      background-size: cover;
+      border-radius: 50%;
+      margin: 105px 30px 0 0;
+      position: absolute;
+      right: -120px;
+    }
+    .pro-list {
+      float: left;
+      width: 284px;
+      height: 365px;
+      margin-right: 16px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      &-text {
+        position: absolute;
+        font-size: 26px;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+        line-height: 35px;
+        bottom: 13px;
+        left: 27px;
+      }
+      .text-2 {
+        left: 326px;
+      }
+      .text-3 {
+        left: 630px;
+      }
+      .text-4 {
+        left: 920px;
+      }
+    }
+  }
+}
+.ecology-people {
+  padding: 70px 0;
+  overflow: hidden;
+  background: url("../../assets/img/ecology/bg_04.png");
+  background-size: cover;
+  h1 {
+    font-size: 34px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: rgba(38, 72, 144, 1);
+    line-height: 34px;
+    margin-bottom: 28px;
+  }
+  .peo-box {
+    overflow: hidden;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 3px 5px 0px rgba(193, 193, 193, 0.36);
+    .peo-list {
+      float: left;
+      width: 200px;
+      height: 167px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(222, 224, 226, 0.3);
+      .imgWh {
+        width: 66%;
+        height: 66%;
+      }
+    }
+    // .no-border {
+    //   border-right: 0;
+    //   border-left: 0;
+    // }
+  }
+  .peo-logo {
+    width: 1200px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .peo-line {
+    display: inline-block;
+    width: 1160px;
+    height: 1px;
+    background: rgba(225, 226, 230, 1);
+    margin: 35px 0 32px 0;
+  }
+}
+.ecology-signUp {
+  padding: 70px 0;
+  background: url("../../assets/img/ecology/bg_05.png") no-repeat;
+  background-size: cover;
+
+  h1 {
+    font-size: 34px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: rgba(38, 72, 144, 1);
+    line-height: 34px;
+    margin-bottom: 59px;
+  }
+  .ant-btn-primary {
+    width: 288px;
+    height: 61px;
+    background: rgba(28, 95, 194, 1);
+    border: 0;
+  }
+  .ant-btn {
+    font-size: 20px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: 59px;
+  }
+}

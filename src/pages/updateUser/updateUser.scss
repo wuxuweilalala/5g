@@ -1,0 +1,58 @@
+.left-align {
+  text-align: left;
+}
+
+.company-attachment {
+  display: flex;
+}
+
+.step-wrapper {
+  margin: 50px;
+}
+.user-info {
+  h3 {
+    text-align: left;
+    font-size: 18px;
+    color: #101010;
+  }
+  .ant-row {
+    .ant-col-12 {
+      max-width: 100%;
+    }
+    .ant-col-3 {
+      flex: 0 0 44.5%;
+      max-width: 32.5%;
+      text-align: left;
+    }
+  }
+  .user-width {
+    width: 246px;
+    text-align: left;
+  }
+  .user-width:last-child {
+      margin-left: 400px;
+  }
+  .industry-box {
+    .ant-row {
+      display: flex;
+      width: 378px;
+    }
+    .ant-col-3 {
+      flex: 0 0 20.5%;
+      max-width: 20.5%;
+      text-align: left;
+    }
+  }
+  .telLeft {
+    margin-left: 4px;
+  }
+  .idenTation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .conForim {
+      background: url('../../assets/img/info/pen.png') no-repeat;
+      background-size: cover;
+  }
+}

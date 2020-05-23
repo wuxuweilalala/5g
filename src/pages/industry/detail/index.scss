@@ -1,0 +1,87 @@
+.induDeatail {
+  padding: 99px 0 80px 0;
+  background: url("../../../assets/img/industry/detail/bg.png") no-repeat;
+  background-size: cover;
+  .indu-Container {
+      display: flex;
+      .indu-info-list-spot {
+        .ant-menu {
+            float: initial;
+          margin-top: 0;
+          padding: 0 97px 0 40px;
+          .ant-menu-item {
+            font-size: 24px;
+            font-family: Microsoft YaHei;
+            font-weight: 400;
+            color: rgba(31, 105, 200, 1);
+            line-height: 35px;
+            padding: 0;
+            margin-right: 78px;
+          }
+        }
+        .ant-menu-horizontal {
+          height: 65px;
+          border-bottom: 2px solid rgba(31, 105, 200, 0.5);
+        }
+        .indu-info-list {
+          float: left;
+          text-align: left;
+          span {
+            margin: 28px 0;
+            text-align: left;
+            width: 757px;
+            font-size: 16px;
+            display: block;
+            font-family: Microsoft YaHei;
+            font-weight: 400;
+            color: rgba(162, 162, 162, 1);
+          }
+        }
+        .list-top {
+            margin-top: 0;
+        }
+      }
+  }
+  .line {
+    float: left;
+    display: block;
+    width: 2px;
+    height: 946px;
+    background: rgba(31, 105, 200, 1);
+    opacity: 0.5;
+    margin-right: 77px;
+  }
+  .indu-recommend {
+      float: left;
+      h1 {
+        font-size:24px;
+        font-family:Microsoft YaHei;
+        font-weight:bold;
+        color:rgba(38,72,144,1);
+        line-height:35px;
+        margin: 0 0 41px 4px;
+      }
+      .indu-flex {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          &-child {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            margin: 0 43px 40px 0;
+              span {
+                font-size:20px;
+                font-family:Microsoft YaHei;
+                font-weight:400;
+                color:rgba(31,105,200,1);
+                line-height:35px;
+                margin-top: 11px;
+              }
+          }
+      }
+  }
+  .no-margin {
+      margin-right: 0 !important;
+  }
+}

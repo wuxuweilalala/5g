@@ -1,0 +1,29 @@
+.header-top {
+    display: flex;
+    padding: 0 55px;
+    height: 90px;
+    background: url('../../assets/img/info/header.png') no-repeat;
+    background-size: cover;
+    .header-box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header-logo {
+            display: block;
+            width: 260px;
+            height: 52px;
+            background: url("../../assets/img/v2/logo.png") no-repeat;
+            background-size: contain;
+          }
+          .title {
+            font-size: 20px;
+            font-family: Microsoft YaHei;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 1);
+            line-height: 20px;
+            margin: 0;
+          }
+    }
+
+}

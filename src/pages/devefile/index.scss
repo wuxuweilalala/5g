@@ -1,0 +1,266 @@
+.guide {
+  padding: 70px 0;
+  background: url("../../assets/img/deveFile/bg_01.png") no-repeat;
+  background-size: cover;
+  h2 {
+    font-size: 34px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: rgba(38, 72, 144, 1);
+    line-height: 34px;
+    margin-bottom: 59px;
+  }
+  &-container {
+    display: flex;
+    &-box {
+      margin-right: 44px;
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      width: 378px;
+      height: 159px;
+      box-shadow: 0px 6px 16px 0px rgba(193, 193, 193, 0);
+      background: url("../../assets/img/deveFile/1.png") no-repeat;
+      background-size: contain;
+      .guide-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        vertical-align: top;
+        height: 100%;
+        width: 88px;
+        // background: rgba(255, 255, 255, 0.1);
+        .guide-icon-1 {
+          margin-left: 10px;
+          display: block;
+          width: 49px;
+          height: 48px;
+          background: url("../../assets//img/deveFile/guide-1.png") no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+      .guide-content {
+        margin-left: 38px;
+        h3 {
+          font-size: 27px;
+          font-family: Microsoft YaHei;
+          font-weight: bold;
+          color: rgba(255, 255, 255, 1);
+          line-height: 34px;
+        }
+        i {
+          display: inline-block;
+          width: 25px;
+          height: 3px;
+          background: #37b6e9;
+          opacity: 0.8;
+        }
+        span {
+          display: inline-block;
+          width: 80px;
+          height: 3px;
+          background: rgba(255, 255, 255, 1);
+          opacity: 0.2;
+        }
+      }
+    }
+    .no-margin {
+      margin: 0;
+    }
+    .guide-bg-2 {
+      background: url("../../assets//img/deveFile/2.png") no-repeat;
+      background-size: 100% 100%;
+    }
+    .guide-bg-3 {
+      background: url("../../assets//img/deveFile/3.png") no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+}
+.secDe {
+  &-tit {
+    font-size: 40px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: rgba(38, 72, 144, 1);
+    line-height: 29px;
+    text-align: center;
+    padding: 55px 0 66px 0;
+    &-w {
+      color: #fff;
+    }
+  }
+  &-cont {
+    text-align: left;
+  }
+}
+.sec-deveFile {
+  padding-bottom: 25px;
+  background: url("../../assets/img/deveFile/bg_02.png") no-repeat;
+  background-size: cover;
+  .deveFile {
+    &-row {
+      margin-bottom: 70px;
+    }
+    &-group {
+      width: 280px;
+      height: 100%;
+      margin-right: 22px;
+      display: inline-block;
+      vertical-align: top;
+      text-align: left;
+      &-logo {
+        display: inline-block;
+        vertical-align: top;
+        height: 100%;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        i {
+          display: inline-block;
+          background-repeat: no-repeat;
+          &.capa-1 {
+            width: 36px;
+            height: 36px;
+            background: url("../../components/header/components/5g-overView/img/icon-1.png") no-repeat;
+            background-size: contain;
+          }
+          &.capa-2 {
+            width: 36px;
+            height: 36px;
+            background: url("../../components/header/components/5g-overView/img/icon-2.png") no-repeat;
+            background-size: contain;
+          }
+          &.capa-3 {
+            width: 36px;
+            height: 36px;
+            background: url("../../components/header/components/5g-overView/img/icon-3.png") no-repeat;
+            background-size: contain;
+          }
+          &.capa-4 {
+            width: 36px;
+            height: 36px;
+            background: url("../../components/header/components/5g-overView/img/icon-4.png") no-repeat;
+            background-size: contain;
+          }
+          &.capa-5 {
+            width: 36px;
+            height: 36px;
+            background: url("../../components/header/components/5g-overView/img/icon-6.png") no-repeat;
+            background-size: contain;
+          }
+          &.capa-6 {
+            width: 36px;
+            height: 36px;
+            background: url("../../components/header/components/5g-overView/img/icon-7.png") no-repeat;
+            background-size: contain;
+          }
+          &.capa-7 {
+            width: 36px;
+            height: 36px;
+            background: url("../../assets/img/deveFile/icon-2.png") no-repeat;
+            background-size: contain;
+          }
+          &.capa-8 {
+            width: 36px;
+            height: 36px;
+            background: url("../../assets/img/deveFile/icon-2.png") no-repeat;
+            background-size: contain;
+          }
+          &.capa-9 {
+            width: 36px;
+            height: 36px;
+            background: url("../../assets/img/deveFile/icon-10.png") no-repeat;
+            background-size: contain;
+          }
+          &.capa-10 {
+            width: 36px;
+            height: 36px;
+            background: url("../../assets/img/deveFile/icon-10.png") no-repeat;
+            background-size: contain;
+          }
+          &.capa-11 {
+            width: 36px;
+            height: 36px;
+            background: url("../../assets/img/deveFile/icon-11.png") no-repeat;
+            background-size: contain;
+          }
+          &.capa-12 {
+            width: 36px;
+            height: 36px;
+            background: url("../../assets/img/deveFile/icon-12.png") no-repeat;
+            background-size: contain;
+          }
+          &.capa-13 {
+            width: 36px;
+            height: 36px;
+            background: url("../../assets/img/deveFile/icon-13.png") no-repeat;
+            background-size: contain;
+          }
+          &.capa-14 {
+            width: 42px;
+            height: 33px;
+            background: url("../../assets/img/deveFile/icon-14.png") no-repeat;
+            background-size: contain;
+          }
+        }
+      }
+      &-wrap {
+        display: inline-block;
+        vertical-align: top;
+        &_line {
+          display: inline-block;
+          width: 222px;
+          height: 2px;
+          background: rgba(236, 237, 240, 1);
+        }
+        &__title {
+          font-size: 22px;
+          font-family: Microsoft YaHei;
+          font-weight: 400;
+          color: rgba(31, 105, 200, 1);
+          line-height: 35px;
+          margin-left: 13px;
+          margin-bottom: 3px;
+        }
+        &__item {
+          display: block;
+          font-size: 16px;
+          font-family: Microsoft YaHei;
+          font-weight: 400;
+          color: rgba(162, 162, 162, 1);
+          line-height: 36px;
+          color: rgba(162, 162, 162, 1);
+          &.no-border {
+            border: none;
+          }
+        }
+      }
+      &-more {
+        font-size: 14px;
+        line-height: 50px;
+        color: #000000;
+        cursor: pointer;
+        vertical-align: middle;
+        i.ico-more {
+          margin-right: 12px;
+          vertical-align: middle;
+          width: 13px;
+          height: 18px;
+          display: inline-block;
+          background: url("../../assets/img/deveFile/bottom.png") no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+  }
+  .no-margin {
+    margin-right: 0px;
+  }
+  .hide-wrap, .hide {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+}

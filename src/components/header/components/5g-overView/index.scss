@@ -1,0 +1,19 @@
+.ant-menu {
+  float: left;
+  margin-top: 39px;
+  margin-right: 40px;
+  background: 0;
+  &:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background: 0;
+  }
+  .ant-menu-item {
+    font-size: 18px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: rgba(31, 105, 200, 1);
+    line-height: 35px;
+  }
+}
+.ant-menu-inline .ant-menu-item:not(:last-child) {
+    margin-bottom: 22px;
+  }

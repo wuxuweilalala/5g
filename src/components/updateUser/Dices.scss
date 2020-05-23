@@ -1,0 +1,17 @@
+.dice-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dice {
+    margin: 5px 10px 5px 0;
+    padding: 8px;
+    width: 140px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid rgb(3, 22, 69);
+    cursor: pointer;
+}
+.active {
+    background: #2a4588
+}

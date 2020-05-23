@@ -1,0 +1,113 @@
+.active-container {
+  overflow: hidden;
+  padding: 23px 0;
+  .active-layout {
+    width: 1200px;
+    margin-left: 142px;
+  }
+  .active-box {
+    text-align: left;
+    margin-bottom: 96px;
+    h1 {
+      font-size: 22px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: rgba(28, 95, 194, 1);
+      line-height: 35px;
+      margin-bottom: 16px;
+    }
+    .active-text {
+      font-size: 18px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: rgba(128, 128, 128, 1);
+      line-height: 35px;
+      margin-bottom: 24px;
+    }
+    .active-href {
+      display: block;
+      width: 100%;
+      height: 298px;
+    }
+    .href-1 {
+      background-image: url('../../../assets/img/consultation/rcs.png');
+      background-size: 100% 100%;
+      width: 100%;
+      height: 298px;
+    }
+    .href-2 {
+      background-image: url('../../../assets/img/consultation/tation.png');
+      background-size: 100% 100%;
+    }
+    .href-3 {
+      background-image: url('../../../assets/img/consultation/5g.png');
+      background-size: 100% 100%;
+    }
+    .href-4 {
+      background-image: url('../../../assets/img/consultation/vr.png');
+      background-size: 100% 100%;
+    }
+  }
+  .active-bottom {
+    text-align: left;
+    border-bottom: 1px solid rgba(31, 105, 200, 0.5);
+    padding-bottom: 59px;
+    &-title {
+      font-size: 22px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: rgba(28, 95, 194, 1);
+      line-height: 35px;
+      margin-bottom: 23px;
+    }
+    &-text {
+      margin-bottom: 23px;
+      font-size: 18px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: rgba(128, 128, 128, 1);
+      line-height: 35px;
+    }
+    &-wx {
+      width: 180px;
+      height: 180px;
+      box-shadow: 0px 3px 8px 0px rgba(225, 226, 229, 0.99);
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .next-list {
+    margin-top: 29px;
+    margin-bottom: 50px;
+    .ant-btn {
+      border: 0;
+      background: 0;
+    }
+    .btn {
+      margin-right: 48px;
+      font-size: 18px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: rgba(128, 128, 128, 1);
+      line-height: 35px;
+      .icon-left {
+        width: 8px;
+        height: 13px;
+        display: inline-block;
+        background: url("../../../assets//img/consultation/left.png") no-repeat;
+        background-size: contain;
+        margin-right: 11px;
+      }
+      .icon-right {
+        width: 8px;
+        height: 13px;
+        display: inline-block;
+        background: url("../../../assets//img/consultation/right.png") no-repeat;
+        background-size: contain;
+        margin-left: 11px;
+      }
+    }
+  }
+}

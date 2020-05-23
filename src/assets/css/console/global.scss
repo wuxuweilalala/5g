@@ -1,0 +1,492 @@
+@import "../_reset";
+
+@import "./_header";
+@import "./_sidebar";
+
+@import "../../../ui/button/index";
+@import "../../../ui/input/index";
+@import "../../../ui/form/index";
+@import "../../../ui/select/index";
+@import "../../../ui/checkbox/index";
+@import "../../../ui/textarea/index";
+@import "../../../ui/table/index";
+@import "../../../ui/toast/index";
+@import "../../../ui/pagination/index";
+@import "../../../ui/daterangepicker/index";
+@import "../../../ui/datetime/index";
+@import "../../../ui/radio/index";
+@import "../../../ui/dialog/index";
+@import "../../../ui/fileuploader/index";
+
+body {
+  background-color: #fff;
+  box-sizing: border-box;
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+.ms-controller {
+  visibility: hidden;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.main {
+  height: calc(100% - 69px);
+  width: 100%;
+}
+
+.mod-white-box {
+  background: #fff;
+  border: 1px solid #e3e3e3;
+  padding: 24px 18px;
+}
+
+.console-header {
+  width: 100%;
+  height: 50px;
+  background-color: $GREEN;
+  color: #fff;
+
+  .logo {
+    line-height: 50px;
+    padding-left: 24px;
+    font-size: 24px;
+    display: inline-block;
+  }
+
+  .action {
+    float: right;
+    line-height: 50px;
+    padding-right:24px;
+    font-size:16px;
+  }
+}
+
+.main-section {
+  border-left: #ccc 1px solid;
+  box-sizing: border-box;
+  vertical-align: top;
+  display: inline-block;
+  width: calc(100% - 255px);
+  min-height: 100%;
+
+  .section-title {
+    color: $TEXTCOLOR_NORMAL;
+    font-size: 22px;
+    padding-left: 40px;
+    line-height: 64px;
+
+    .control {
+      float: right;
+      margin-right: 40px;
+      .item {
+        color: #666;
+        display: inline-block;
+        font-size: 14px;
+        margin-left: 8px;
+        margin-right: 8px;
+      }
+    }
+  }
+  .section-tips {
+    color: #878787;
+    margin-bottom: 10px;
+  }
+
+  .section-subtitle {
+    margin-top: 32px;
+    margin-bottom: 6px;
+    font-size: 20px;
+    color: #555;
+  }
+
+  .section-guide {
+    a {
+      margin-left: 20px;
+      color: #1cbcb4;
+    }
+    &.lg {
+      font-size: 20px;
+      margin-top: 15px;
+    }
+  }
+
+  .section-subdesc {
+    white-space: pre-line;
+    font-size: 18px;
+    color: #777;
+  }
+
+  .section-title-action {
+    line-height: 68px;
+    margin-right: 42px;
+    float: right;
+  }
+
+  .section-content {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 32px;
+    margin-bottom: 46px;
+
+    .app-name {
+      @extend %text-overflow;
+    }
+  }
+
+  .divider {
+    height: 1px;
+    background-color: #bbb
+  }
+}
+
+.default-input {
+  width: 430px !important;
+}
+.basic-input {
+  width: 240px !important;
+}
+
+.ui-table {
+  min-width: 860px;
+  margin-right: 42px;
+
+  table, thead {
+    background-color: transparent;
+    border-color: #e9e9e9;
+  }
+
+  th {
+    padding: 16px 12px;
+    font-size: 14px;
+    background: #f7f7f7;
+    text-align: left;
+    color: rgba(0,0,0,.85);
+  }
+
+  tr:hover {
+    background-color: #ecf6fd;
+  }
+
+  td {
+    padding: 18px 16px;
+    border: none;
+    text-align: left;
+    color: #666;
+  }
+}
+
+.mod-form-card {
+  margin-top: 80px;
+  margin-bottom: 28px;
+}
+
+.mod-form-card .layout {
+  background: #fff;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+}
+
+.mod-sys-msg {
+  text-align: center;
+  padding: 103px 0;
+
+  .btn-wrap {
+    padding-top: 34px;
+
+    .ui-button {
+      margin: 0 10px;
+    }
+  }
+}
+
+.mod-sys-msg {
+  text-align: center;
+}
+
+.mod-sys-msg .sys-msg-title {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 28px;
+  margin-left: 15px;
+}
+
+.mod-sys-msg .sys-msg-details {
+  font-size: 16px;
+  color: #878787;
+  margin-top: 17px;
+}
+
+.mod-sys-msg .btn-wrap {
+  margin-top: 30px;
+}
+
+.checkbox-container {
+  margin-top: 8px;
+  .wrapper {
+    margin-bottom: 14px;
+  }
+
+  .title {
+    font-size: 16px;
+    color: #666;
+    display: inline-block;
+    width: 120px;
+  }
+
+  .content {
+    vertical-align: top;
+    display: inline-block;
+    width: 460px;
+  }
+
+  .ui-checkbox {
+    padding: 4px 0px 8px 0px;
+    width: 140px;
+  }
+}
+
+.checkbox-group {
+  margin-top: 11px;
+  width: 520px;
+
+  .ui-checkbox {
+    width: 120px;
+    height: 36px;
+  }
+
+  &.second {
+    margin-top: 18px;
+  }
+}
+
+.action-margin {
+  margin-right: 24px;
+}
+
+.create-app {
+  .layout {
+    width: 900px;
+  }
+
+  .button-group {
+    margin-top: 42px;
+    text-align: center;
+
+    .ui-button {
+      margin: 0 16px;
+    }
+  }
+
+}
+
+.chat-detail,.edit-chat,.create-chat {
+  .layout {
+    width: 900px;
+  }
+  .button-group {
+    margin-top: 42px;
+    text-align: center;
+
+    .ui-button {
+      margin: 0 16px;
+    }
+  }
+  .input-tips {
+    margin: 11px 0 0 0;
+    display: block;
+  }
+  .mod-form-tit {
+    width: 125px;
+  }
+  .mod-form-cont {
+    max-width: 260px;
+  }
+  .section-content {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.empty {
+  text-align: center;
+  font-size: 28px;
+  color: #b7b7b7;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.empty-wrap {
+  height: 300px;
+}
+
+.date-input {
+  width: 220px;
+  cursor: pointer;
+}
+
+.select-tab {
+  position: relative;
+  font-size: 14px;
+  border-left: 1px solid #e2e2e2;
+  display: inline-block;
+  margin-right: 8px;
+
+  .opt {
+    display: inline-block;
+    line-height: 38px;
+    padding: 0 17px;
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    margin-left: 0;
+    color: #878787;
+    cursor: pointer;
+
+    &.cur {
+      background: #fff;
+      color: #1cbcb4;
+    }
+  }
+}
+
+.console-select {
+  position: relative;
+  display: inline-block;
+  margin-right: 8px;
+
+  select {
+    max-width: 200px;
+    height: 38px;
+    display: inline-block;
+    color: #666;
+    margin: 0;
+    padding-left: 4px;
+    font: inherit;
+    border: 1px solid #e2e2e2;
+    outline:none; /* remove focus ring from Webkit */
+    line-height: 38px;
+  }
+}
+
+.ui-daterange-input {
+  width: 240px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+
+  & > input {
+    width: 222px;
+    cursor: pointer;
+    height: 20px;
+    line-height: 20px;
+    padding: 9px 8px;
+    border: 1px solid #e2e2e2;
+    // background-color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: border-color .15s,background-color .15s;
+  }
+}
+
+.chat-detail {
+  p {
+    font-size: 16px;
+    padding: 6px 0;
+  }
+}
+
+.dialogBodyStyle {
+  font-size: 16px;
+  margin-top: 20px;
+}
+.no-modal:before {
+  background: transparent;
+}
+.ui-date-now {
+  display:none;
+}
+
+.wx-box-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wx-box {
+  position: relative;
+  width: 190px;
+  height: 140px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e9e9e9;
+  display: inline-block;
+  &-imgCol {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    img {
+      width: 100%;
+    }
+  }
+  &-textCol {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    width: 60px;
+    p {
+      word-break: break-all;
+      margin: 5px 0px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+  }
+}
+
+.bind-msg {
+  width: 50%;
+  margin: 0px auto;
+  &-title {
+    text-align: left;
+    width: 90%;
+  }
+}
+.create-material {
+  .text {
+    color: #b7b7b7;
+    padding: 4px 0;
+    font-size: 12px;
+    line-height: 24px;
+  }
+}
+
+.dialog-terms {
+  .ui-dialog {
+    width: 500px;
+    &-title {
+      color: #909090;
+    }
+    &-body {
+      padding: 47px 60px 20px;
+    }
+    &-footer {
+      padding: 0 35px 47px;
+    }
+  }
+  a {
+    color: #0052d9;
+  }
+  .check-wrap {
+    text-align: center;
+    margin-top: 22px;
+  }
+}

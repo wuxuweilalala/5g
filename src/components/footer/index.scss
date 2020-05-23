@@ -1,0 +1,111 @@
+.footer {
+  padding: 69px 0 60px 0;
+  height: 404px;
+  background: rgba(46, 48, 51, 1);
+  ul {
+    overflow: hidden;
+  }
+  &-list {
+    float: left;
+    width: 152px;
+    height: 43px;
+    margin-right: 110px;
+    margin-bottom: 15px;
+    .footer-icon-1 {
+      background: url("./img/footer-icon-1.png") no-repeat;
+      background-size: cover;
+      width: 44px;
+      height: 42px;
+      display: block;
+      float: left;
+    }
+    .footer-icon-2 {
+      background: url("./img/footer-icon-2.png") no-repeat;
+      background-size: cover;
+      width: 44px;
+      height: 43px;
+      display: block;
+      float: left;
+    }
+    .footer-icon-3 {
+      background: url("./img/footer-icon-3.png") no-repeat;
+      background-size: cover;
+      width: 44px;
+      height: 43px;
+      display: block;
+      float: left;
+    }
+    .footer-icon-4 {
+      background: url("./img/footer-icon-4.png") no-repeat;
+      background-size: cover;
+      width: 44px;
+      height: 44px;
+      display: block;
+      float: left;
+    }
+    .footer-icon-5 {
+      background: url("./img/footer-icon-5.png") no-repeat;
+      background-size: cover;
+      width: 44px;
+      height: 44px;
+      display: block;
+      float: left;
+    }
+    span {
+      display: inline-block;
+      height: 23px;
+      font-size: 20px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 1);
+      line-height: 43px;
+      text-align: center;
+      margin-left: 15px;
+    }
+  }
+  .no-margin {
+    margin: 0;
+  }
+  &-container-line {
+    height: 1px;
+    background: rgb(153, 139, 139);
+  }
+  .footer-p {
+    height: 18px;
+    margin: 0;
+  }
+  &-content {
+    display: flex;
+    .footer-about {
+      margin-top: 16px;
+      margin-right: 119px;
+      a {
+        color: #bfbfbf;
+        font-size: 16px;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        display: block;
+        text-align: left;
+      }
+      .text-rig {
+        margin-right: 16px;
+      }
+    }
+    .footer-marRight {
+      margin-right: 148px;
+      margin-left: -6px;
+    }
+    .footer-wx {
+      width: 150px;
+      height: 150px;
+      background: url("./img/footer-wx.png") no-repeat;
+      background-size: cover;
+      display: inline-block;
+      margin-left: 97px;
+    }
+    .footer-marLeft {
+      margin-left: 9px;
+      margin-right: 112px !important;
+    }
+  }
+}

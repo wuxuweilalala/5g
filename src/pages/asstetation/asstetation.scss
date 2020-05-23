@@ -1,0 +1,208 @@
+.left-align {
+  text-align: left;
+}
+.asstion {
+  background: url("../../assets/img/info/bg2.png") no-repeat;
+  background-size: cover;
+  padding-bottom: 100px;
+  .asstion-center {
+    padding: 100px 0;
+    position: relative;
+    .line {
+      position: absolute;
+      display: inline-block;
+      width: 305px;
+      height: 2px;
+      background: #b0bfd4;
+      left: 235px;
+      top: 217px;
+    }
+    .line2 {
+      position: absolute;
+      display: inline-block;
+      width: 305px;
+      height: 2px;
+      background: #b0bfd4;
+      left: 636px;
+      top: 217px;
+    }
+    .box-title {
+      height: 42px;
+      background: rgba(255, 255, 255, 1);
+      border: 1px solid rgba(128, 128, 128, 0.28);
+      border-radius: 5px;
+      line-height: 42px;
+      text-align: left;
+      padding-left: 19px;
+      color: rgba(47, 50, 80, 1);
+      margin-bottom: 35px;
+    }
+    .ant-steps-item-active {
+      .ant-steps-item-icon {
+        background: url("../../assets/img/info/icon-1.png") no-repeat !important;
+        background-size: cover !important;
+        border: 0 !important;
+      }
+    }
+    .ant-steps-item {
+      display: flex;
+      flex-flow: column;
+      flex-grow: 1;
+      &-container {
+        display: flex;
+        flex-flow: column;
+        justify-items: center;
+        align-items: center;
+        .ant-steps-item-icon {
+          width: 82px;
+          height: 82px;
+          display: flex;
+          border-radius: 50%;
+          align-items: center;
+          justify-content: center;
+          background: url("../../assets/img/info/icon-2.png") no-repeat;
+          background-size: cover;
+          border: 0;
+          span {
+            font-size: 36px;
+            font-family: Microsoft YaHei;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 1);
+            line-height: 64px;
+          }
+        }
+      }
+      &-content {
+        .ant-steps-item-title {
+          font-size: 16px;
+          font-family: Microsoft YaHei;
+          font-weight: 400;
+          color: rgba(47, 50, 80, 1);
+        }
+        .ant-steps-item-title::after {
+          display: none;
+        }
+      }
+    }
+  }
+  .step-wrapper {
+    border: 2px solid rgba(255, 255, 255, 1);
+    margin: 0;
+    padding: 44px 0 51px 72px;
+    position: relative;
+    .ant-row {
+      .ant-col-4 {
+        flex: 0 0 60.666667%;
+        max-width: 24.666667%;
+        text-align: left;
+      }
+      .ant-col-12 {
+        width: 473px;
+      }
+    }
+    .attach-title {
+      p {
+        font-size: 18px;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        color: rgba(47, 50, 80, 1);
+        text-align: left;
+        width: 687px;
+        margin: 0;
+      }
+    }
+    .company-file-uploader {
+      margin-top: 20px;
+      .ant-upload {
+        width: 327px;
+        height: 182px;
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 0px 8px 0px rgba(236, 236, 239, 1);
+        border-radius: 3px;
+      }
+    }
+    .anticon {
+      background: url("../../assets/img/info/add.png") no-repeat;
+      background-size: cover;
+      width: 87px;
+      height: 87px;
+      svg {
+        display: none;
+      }
+    }
+    // .ant-upload-text {
+    //   display: none;
+    // }
+    .posi-box {
+      position: absolute;
+      bottom: -102px;
+      left: 7px;
+      width: 100%;
+      .ant-btn {
+        width: 300px;
+        height: 52px;
+      }
+      .ant-form-item {
+        margin: 0;
+      }
+      .confirm {
+        display: flex;
+        // /* text-align: center; */
+        justify-content: center;
+        .step {
+          margin-right: 129px;
+          background: #fff !important;
+          color: #1c5fc2;
+        }
+        .ant-form-item-control-input-content {
+          justify-content: center;
+        }
+      }
+    }
+    .update-box {
+      margin-right: 20px;
+      .ant-upload {
+        width: 255px;
+        height: 122px;
+      }
+    }
+  }
+  .step-wrapper1 {
+    min-height: 400px;
+    h2 {
+      font-size: 30px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: rgba(47, 50, 80, 1);
+      line-height: 35px;
+      margin-top: 50px;
+    }
+    .ant-btn {
+      width: 255px;
+      height: 52px;
+      background: rgba(255, 255, 255, 1) !important;
+      color: #1C5FC2;
+      border: 1px solid rgba(28, 95, 194, 0.35);
+      margin-top: 50px;
+      line-height: 52px;
+      font-size: 20px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+    }
+  }
+  
+.company-attachment {
+  display: flex;
+  width: 628px;
+  .ant-form-item-control-input {
+    &-content {
+      display: block !important;
+    }
+  }
+
+}
+
+  // .ant-form:last-child {
+  //   width: 900px;
+  // }
+}

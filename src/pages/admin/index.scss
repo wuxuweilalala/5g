@@ -1,0 +1,35 @@
+#components-layout-demo-responsive .logo {
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px;
+  }
+  .site-layout-background {
+    background: #fff;
+  }
+ .ant-layout {
+     flex: 1 1;
+     flex-direction: initial;
+     &-content {
+         margin: 40px 45px 0 24px!important;
+     }
+  .ant-menu {
+      margin-top: 45px;
+      &-item-group-title {
+        color: #fff;
+        font-size: 20px;
+        font-family: Microsoft YaHei;
+        font-weight: bold;
+        line-height: 20px;
+        margin-bottom: 18px;
+      }
+      &-item {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 18px;
+      }
+      &-item:not(:last-child) {
+          margin-bottom: 0px;
+      }
+  }
+ }

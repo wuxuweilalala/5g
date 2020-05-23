@@ -1,0 +1,429 @@
+.ability {
+  ul {
+    margin-bottom: 0 !important;
+  }
+  .banner {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  padding: 0px 0 70px 0;
+  .cotainerBox {
+    position: relative;
+    .mapLink {
+      position: absolute;
+      bottom: -26px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1200px;
+    }
+    .banner-link {
+      width: 305px;
+      height: 42px;
+      background-color: #dfe2f5;
+      border-radius: 5px;
+      margin-right: 2px;
+      a {
+        display: block;
+        color: #3560a1;
+        p {
+          text-align: center;
+          font-family: MicrosoftYaHei;
+          line-height: 42px;
+          font-size: 14px;
+          font-weight: normal;
+          font-stretch: normal;
+          letter-spacing: 0px;
+        }
+      }
+      a:hover {
+        color: #fff; /*已访问的链接颜色*/
+        background-color: #1c5fc2;
+      }
+    }
+  }
+  .experience {
+    overflow: hidden;
+    background: url("../../assets/img/ability/bg1.png") no-repeat;
+    background-size: cover;
+    h1 {
+      font-size: 34px;
+      font-family: Microsoft YaHei;
+      font-weight: bold;
+      color: rgba(38, 72, 144, 1);
+      margin-bottom: 49px;
+      margin-top: 68px;
+    }
+    .demo-tab {
+      height: 420px;
+    }
+  }
+  .scene {
+    padding: 70px 0;
+    overflow: hidden;
+    background: url("../../assets/img/ability/bg2.png") no-repeat;
+    background-size: cover;
+    h1 {
+      font-size: 34px;
+      font-family: Microsoft YaHei;
+      font-weight: bold;
+      color: rgba(38, 72, 144, 1);
+      margin-bottom: 70px;
+    }
+    &-list {
+      float: left;
+      position: relative;
+      .ant-menu {
+        margin: 0px 50px 0 0;
+        padding-right: 11px;
+        border-right: 2px solid #e8e8e8;
+        .ant-menu-item {
+          font-size: 21px;
+          font-family: Microsoft YaHei;
+          font-weight: 400;
+          color: #1c5fc2;
+          background: #fff;
+          text-align: center;
+          line-height: 36px;
+        }
+        &:not(.ant-menu-horizontal) .ant-menu-item-selected {
+          color: #fff;
+          background: url("../../assets/img/ability/tit_bg.png") no-repeat;
+          background-size: cover;
+        }
+      }
+      // .ant-menu::before {
+      //   position: absolute;
+      //   top: -122px;
+      //   right: 49px;
+      //   bottom: 0;
+      //   border-right: 3px solid #1890ff;
+      //   -webkit-transform: scaleY(0.0001);
+      //   transform: scaleY(0.0001);
+      //   opacity: 0;
+      //   -webkit-transition: opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1),
+      //     -webkit-transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+      //   transition: opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1),
+      //     -webkit-transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+      //   transition: transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1),
+      //     opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+      //   transition: transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1),
+      //     opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1),
+      //     -webkit-transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+      //   content: "";
+      // }
+      // .ant-menu::before {
+      //   -webkit-transform: scaleY(0.1);
+      //   transform: scaleY(0.072);
+      //   opacity: 1;
+      //   -webkit-transition: opacity 0.15s cubic-bezier(0.645, 0.045, 0.355, 1),
+      //     -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+      //   transition: opacity 0.15s cubic-bezier(0.645, 0.045, 0.355, 1),
+      //     -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+      //   transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1),
+      //     opacity 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+      //   transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1),
+      //     opacity 0.15s cubic-bezier(0.645, 0.045, 0.355, 1),
+      //     -webkit-transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1);
+      // }
+      // .ant-menu-inline .ant-menu-item::after {
+      //   border-right: 3px solid #000;
+      // }
+    }
+    &-container {
+      float: left;
+      .scene-container-top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 52px;
+        .top-box {
+          text-align: left;
+          h5 {
+            font-size: 26px;
+            font-family: Microsoft YaHei;
+            font-weight: 400;
+            color: rgba(31, 105, 200, 1);
+            line-height: 35px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            .icon-file {
+              width: 20px;
+              height: 27px;
+              display: inline-block;
+              background: url("../../assets/img/ability/file.png") no-repeat;
+              background-size: contain;
+              margin-left: 8px;
+            }
+          }
+          p {
+            font-size: 16px;
+            font-family: Microsoft YaHei;
+            font-weight: 400;
+            color: rgba(128, 128, 128, 1);
+            line-height: 28px;
+            width: 680px;
+          }
+        }
+      }
+      .demo-list {
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 3px;
+        padding: 9px 41px 8px 13px;
+        display: flex;
+        &-ul {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+        }
+        &-img {
+          width: 142px;
+          height: 89px;
+          border-radius: 3px;
+          background: url("../../assets/img/ability/demo_bg.png") no-repeat;
+          background-size: contain;
+          .img-name {
+            font-size: 22px;
+            font-family: Microsoft YaHei;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 1);
+            text-align: center;
+            line-height: 89px;
+          }
+        }
+        &-item {
+          width: 116px;
+          height: 74px;
+          box-shadow: 0px 1px 4px 0px rgba(48, 60, 117, 0.3);
+          border-radius: 3px;
+        }
+        &-item:last-child {
+          margin-right: 0;
+        }
+        .item-1 {
+          background: url("../../assets/img/ability/didi.png") no-repeat;
+          background-size: 100%;
+          background-position-y: center;
+        }
+        .item-2 {
+          background: url("../../assets/img/ability/yh.png") no-repeat;
+          background-size: 100%;
+          background-position-y: center;
+        }
+        .item-3 {
+          background: url("../../assets/img/ability/pt.png") no-repeat;
+          background-size: 100%;
+          background-position-y: center;
+        }
+        .item-4 {
+          background: url("../../assets/img/ability/cqpolice.png") no-repeat;
+          background-size: 100%;
+          background-position-y: center;
+        }
+        .item-5 {
+          background: url("../../assets/img/ability/hf-bank.png") no-repeat;
+          background-size: 100%;
+          background-position-y: center;
+        }
+        .item-6 {
+          background: url("../../assets/img/ability/sz-police.png") no-repeat;
+          background-size: 100%;
+          background-position-y: center;
+        }
+        .item-8 {
+          background: url("../../assets/img/ability/bbg.png") no-repeat;
+          background-size: 100%;
+          background-position-y: center;
+        }
+        .item-9 {
+          background: url("../../assets/img/ability/jlf.png") no-repeat;
+          background-size: contain;
+          background-position-x: center;
+        }
+        .item-10 {
+          background: url("../../assets/img/ability/rmrb.png") no-repeat;
+          background-position-y: center;
+          background-size: contain;
+        }
+        .item-11 {
+          background: url("../../assets/img/ability/xhs.png") no-repeat;
+          background-size: 100%;
+          background-position-y: center;
+        }
+        .item-12 {
+          background: url("../../assets/img/ability/qqkj.png") no-repeat;
+          background-size: 100%;
+          background-position-y: center;
+        }
+        .item-13 {
+          background: url("../../assets/img/ability/QQ-red.png") no-repeat;
+          background-size: 100%;
+          background-position-y: center;
+        }
+        .item-14 {
+          background: url("../../assets/img/ability/pt.png") no-repeat;
+          background-size: 100%;
+          background-position-y: center;
+        }
+        .item-15 {
+          background: url("../../assets/img/ability/wx-see.png") no-repeat;
+          background-size: 100%;
+          background-position-y: center;
+        }
+      }
+    }
+  }
+  .advan {
+    padding: 70px 0 54px 0;
+    background: url("../../assets/img/ability/bg3.png") no-repeat;
+    background-size: cover;
+    h1 {
+      font-size: 34px;
+      font-family: Microsoft YaHei;
+      font-weight: bold;
+      color: rgba(38, 72, 144, 1);
+      margin-bottom: 50px;
+    }
+    .advan-box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .advan-item {
+      width: 328px;
+      height: 320px;
+      padding: 137px 39px 39px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-family: MicrosoftYaHei;
+      margin-bottom: 46px;
+      h3 {
+        font-size: 26px;
+        line-height: 28px;
+        letter-spacing: 0px;
+        margin-bottom: 15px;
+        color: #ffffff;
+      }
+      p {
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0px;
+        text-align: justify;
+      }
+    }
+    .item-1 {
+      background: url("../../assets/img/ability/super-1.png") no-repeat;
+      background-size: cover;
+    }
+    .item-2 {
+      background: url("../../assets/img/ability/super-1.png") no-repeat;
+      background-size: cover;
+    }
+    .item-3 {
+      background: url("../../assets/img/ability/super-1.png") no-repeat;
+      background-size: cover;
+    }
+    .item-4 {
+      background: url("../../assets/img/ability/super-1.png") no-repeat;
+      background-size: cover;
+      margin-left: 0 !important;
+    }
+    .item-5 {
+      background: url("../../assets/img/ability/super-1.png") no-repeat;
+      background-size: cover;
+    }
+  }
+  .recommend {
+    padding: 70px 0;
+    background: url("../../assets/img/ability/bg4.png") no-repeat;
+    background-size: cover;
+    h1 {
+      font-size: 34px;
+      font-family: Microsoft YaHei;
+      font-weight: bold;
+      color: rgba(38, 72, 144, 1);
+      margin-bottom: 67px;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      .recommend-list {
+        width: 349px;
+        height: 378px;
+        background: #fff;
+        border: solid 2px #fff;
+        margin-right: 87px;
+        h3 {
+          font-family: MicrosoftYaHei;
+          font-size: 24px;
+          font-weight: normal;
+          font-stretch: normal;
+          letter-spacing: 0px;
+          color: #ffffff;
+          background-color: #1f69c8;
+          line-height: 46px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .abi-1 {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: url("../../assets//img/ability/abi-1.png") no-repeat;
+            background-size: contain;
+            margin-right: 4px;
+          }
+          .abi-2 {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: url("../../assets//img/ability/abi-2.png") no-repeat;
+            background-size: contain;
+            margin-right: 4px;
+          }
+          .abi-3 {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background: url("../../assets//img/ability/abi-3.png") no-repeat;
+            background-size: contain;
+            margin-right: 4px;
+          }
+        }
+        &-box {
+          margin: 0 40px;
+          p {
+            font-family: MicrosoftYaHei;
+            font-size: 14px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 24px;
+            letter-spacing: 0px;
+            color: #808080;
+            text-align: justify;
+          }
+          .icon-1 {
+            width: 226px;
+            height: 148px;
+            margin: 15px 0 0px 0;
+          }
+          .icon-2 {
+            width: 210px;
+            height: 130px;
+            margin: 23px 0 12px 0;
+          }
+          .icon-3 {
+            margin: 28px 0;
+          }
+        }
+      }
+      .recommend-list:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

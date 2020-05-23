@@ -1,0 +1,26 @@
+.ant-carousel .slick-slide {
+    text-align: center;
+    background: #364d79;
+    overflow: hidden;
+    div{
+        height: 100%;
+    }
+  }
+  
+.ant-carousel .slick-slide h3 {
+    color: #fff;
+  }
+.banner-bg {
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+.ant-carousel .slick-dots li button {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+.ant-carousel .slick-dots-bottom {
+    bottom: 66px;
+}

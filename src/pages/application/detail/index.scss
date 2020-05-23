@@ -1,0 +1,64 @@
+.appli-Container {
+  float: left;
+  margin-left: 85px;
+ .appli-content {
+     margin-bottom: 40px;
+    &-title {
+        text-align: left;
+        margin-bottom: 20px;
+        position: relative;
+        .icon-1 {
+          display: inline-block;
+          width: 33px;
+          height: 20px;
+          background: url("../../../assets/img/application/icon-1.png") center center no-repeat;
+          background-size: contain;
+          position: absolute;
+          left: 0;
+          top: 5px;
+        }
+        .line {
+            display: inline-block;
+            width:2px;
+            height:20px;
+            background: url("../../../assets/img/application/line.png") center center no-repeat;
+            background-size: contain;
+            position: absolute;
+            left: 0;
+            top: 6px;
+        }
+        span {
+          height: 26px;
+          font-size: 20px;
+          font-family: Microsoft YaHei;
+          font-weight: 400;
+          color: rgba(89, 145, 218, 1);
+          margin-left: 20px;
+        }
+      }
+      ol {
+          padding-left: 55px;
+      }
+      .appli-img {
+          padding-left: 33px;
+          display: flex;
+          justify-content: space-between;
+      }
+      &-text {
+        list-style: disc;
+        width: 821px;
+        font-size: 14px;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        line-height:36px;
+        color: rgba(128, 128, 128, 1);
+        text-align: left;
+      }
+    .marLeft {
+        margin-left: 30px;
+    }
+    .oneLeft {
+        padding-left: 26px;
+    }
+ }
+}

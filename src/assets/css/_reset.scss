@@ -1,0 +1,143 @@
+@import "_variable";
+@import "_mixins";
+
+//============== RESET ==============//
+body,
+p,
+ul,
+li,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+ul,
+li,
+dd {
+  list-style: none;
+}
+img {
+  border: none;
+  outline: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  color: inherit;
+}
+input {
+  outline: none;
+}
+em {
+  font-style: normal;
+}
+html {
+  height: 100%;
+}
+body {
+  position: relative;
+  font: 12px/1.5 'microsoft yahei', arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: $BODY_BG_COLOR;
+  min-width: $LAYOUT_WIDTH;
+  color: $TEXTCOLOR_NORMAL;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+input,
+textarea,
+button,
+select {
+  font-size: 1em;
+  font-family: inherit;
+}
+::-webkit-input-placeholder {
+  color: $GRAY;
+}
+:-moz-placeholder {
+  color: $GRAY;
+}
+::-moz-placeholder {
+  color: $GRAY;
+}
+:-ms-input-placeholder {
+  color: $GRAY;
+}
+.scroll {
+  &::-webkit-scrollbar {
+    width: 8px;
+    background: #eee;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: #ddd;
+  }
+}
+//============== RESET ==============//
+.hidden {
+  display: none !important;
+}
+.clearfix {
+  @extend %clearfix;
+}
+// ========== ie8会忽略掉包含:disabled的selector，所以这里分开写 =============//
+.disabled {
+  @include opacity(0.5);
+  cursor: default;
+  user-select: none;
+}
+:disabled {
+  @include opacity(0.5);
+  cursor: default;
+  user-select: none;
+}
+// ================================= end =====================================//
+.layout {
+  width: $LAYOUT_WIDTH;
+  margin: 0 auto;
+}
+
+.mr0 {
+  margin-right: 0 !important;
+}
+.weak {
+  color: $TEXTCOLOR_WEAK;
+}
+.weaker {
+  color: $TEXTCOLOR_WEAK_MORE;
+}
+.mod-crumb {
+  width: 200 * $CELL_WIDTH;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 20px auto;
+  a {
+    color: $TEXTCOLOR_NORMAL;
+    &:hover {
+      color: $GREEN;
+    }
+  }
+  span {
+    color: $TEXTCOLOR_WEAK;
+  }
+}

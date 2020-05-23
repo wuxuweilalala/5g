@@ -1,0 +1,100 @@
+.industry {
+  padding: 56px 0;
+  overflow: hidden;
+  a {
+    color: #1f69c8;
+  }
+  &-content {
+    float: left;
+    h2 {
+      font-size: 34px;
+      font-family: Microsoft YaHei;
+      color: rgba(31, 105, 200, 1);
+      line-height: 34px;
+      margin-bottom: 25px;
+    }
+    img {
+      width: 236px;
+      height: 204px;
+    }
+  }
+  .line {
+    float: left;
+    display: block;
+    width: 1px;
+    height: 248px;
+    background: rgba(31, 105, 200, 1);
+    opacity: 0.5;
+    margin: 0 55px 0 47px;
+  }
+  .list-ul {
+    overflow: hidden;
+  }
+  &-list {
+    float: left;
+    text-align: left;
+    margin-bottom: 40px;
+    .icon-icon {
+      float: left;
+      display: block;
+      width: 51px;
+      height: 59px;
+      // background: url("../../assets/img/industry/icon-icon.png") no-repeat;
+      background-size: cover;
+      margin-right: 20px;
+    }
+    &-box {
+      float: left;
+      width: 762px;
+      h5 {
+        font-size: 20px;
+        font-family: Microsoft YaHei;
+        font-weight: 600;
+        color: rgba(31, 105, 200, 1);
+        line-height: 35px;
+      }
+      .list-text {
+        display: inline-block;
+        width: 752px;
+        font-size: 18px;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        color: rgba(128, 128, 128, 1);
+        line-height: 28px;
+        margin-top: 30px;
+        // white-space: nowrap;
+        // overflow: hidden;
+        // text-overflow: ellipsis;
+      }
+    }
+  }
+}
+.induRight {
+  float: left;
+  display: flex;
+  flex-flow: column;
+}
+.indu-bg1, .indu-bg7 {
+  background: url("../../assets/img/industry/bg1.png") no-repeat;
+  background-size: cover;
+}
+.indu-bg2, .indu-bg8 {
+  background: url("../../assets/img/industry/bg2.png") no-repeat;
+  background-size: cover;
+}
+.indu-bg3, .indu-bg9 {
+  background: url("../../assets/img/industry/bg3.png") no-repeat;
+  background-size: cover;
+}
+.indu-bg4, .indu-bg10 {
+  background: url("../../assets/img/industry/bg4.png") no-repeat;
+  background-size: cover;
+}
+.indu-bg5, .indu-bg11 {
+  background: url("../../assets/img/industry/bg5.png") no-repeat;
+  background-size: cover;
+}
+.indu-bg6, .indu-bg12 {
+  background: url("../../assets/img/industry/bg6.png") no-repeat;
+  background-size: cover;
+}

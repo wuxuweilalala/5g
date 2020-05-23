@@ -1,0 +1,142 @@
+.city-container {
+  padding: 70px 0;
+  background: url("../../assets/img/cityPlan/bg_01.png") no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  .title-list {
+    overflow: hidden;
+    .ant-menu {
+      margin-top: 49px;
+      background: #1c5fc2;
+      .ant-menu-item {
+        line-height: 50px;
+        width: 239px;
+        height: 50px;
+        background: rgba(223, 226, 245, 1);
+        border-radius: 5px;
+        text-align: center;
+        margin-right: 1px;
+        font-weight: 400;
+      }
+      .ant-menu-item-selected {
+        border: 0;
+        color: #fff;
+        background: #1c5fc2;
+      }
+    }
+  }
+  h1 {
+    font-size: 45px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: rgba(38, 72, 144, 1);
+  }
+  .top-list {
+    margin-top: 32px;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    margin-bottom: 78px;
+    .list-left {
+      h3 {
+        margin: 19px 0 6px 0;
+        font-size: 26px;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        color: rgba(31, 105, 200, 1);
+        line-height: 35px;
+      }
+      .list-left-title {
+        margin-top: 0;
+      }
+      &-item {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        .ant-menu {
+          margin-top: 0;
+          margin-bottom: 23px;
+          .ant-menu-item {
+            font-size: 20px;
+            font-family: Microsoft YaHei;
+            font-weight: 400;
+            color: rgba(47, 50, 80, 1);
+          }
+        }
+      }
+      .list-text {
+        font-size: 20px;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        color: rgba(128, 128, 128, 1);
+        line-height: 28px;
+        text-indent: 2rem;
+        margin-bottom: 21px;
+        width: 502px;
+      }
+      .ant-btn-primary {
+        width: 222px;
+        height: 60px;
+        background: rgba(28, 95, 194, 1);
+        font-size: 20px;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+}
+.middle-container {
+  padding-top: 70px;
+  background: url("../../assets/img/deveFile/bg_02.png") no-repeat;
+  background-size: cover;
+  h1 {
+    height: 45px;
+    font-size: 45px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: rgba(38, 72, 144, 1);
+    line-height: 45px;
+    margin-bottom: 72px;
+  }
+  .middle-list {
+    overflow: hidden;
+    &-item {
+      float: left;
+      margin-right: 73px;
+      margin-bottom: 100px;
+      .list-item-text {
+        height: 30px;
+        font-size: 30px;
+        font-family: Microsoft YaHei;
+        font-weight: 400;
+        color: rgba(28, 102, 193, 1);
+        line-height: 30px;
+      }
+    }
+  }
+  .no-margin {
+    margin: 0;
+  }
+}
+.bottom-container {
+  padding: 158px 0 138px 0;
+  background: url("../../assets/img/cityPlan/bottom-bg.png") no-repeat;
+  background-size: cover;
+  h1 {
+    height: 44px;
+    font-size: 45px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: 35px;
+    margin-bottom: 45px;
+  }
+  .ant-btn {
+    width:147px;
+    height:47px;
+    background:rgba(243,245,250,1) !important;
+    border:1px solid rgba(255, 255, 255, 1);
+    border-radius:5px;
+  }
+}
