@@ -40,9 +40,9 @@ function Home () {
               <div className="sec-cont">
                 <div className="capability-row">
                   <div className="capability-group ">
-                    <div className="capability-group-logo">
+                 {/*   <div className="capability-group-logo">
                       <i className="capa-1"></i>
-                    </div>
+                    </div>*/}
                     <div className="capability-group-wrap">
                       <a
                         className="capability-group-wrap__title cap-title animated"
@@ -56,9 +56,9 @@ function Home () {
                     </div>
                   </div>
                   <div className="capability-group ">
-                    <div className="capability-group-logo animated">
+               {/*     <div className="capability-group-logo animated">
                       <i className="capa-2"></i>
-                    </div>
+                    </div>*/}
                     <div className="capability-group-wrap">
                       <a
                         className="capability-group-wrap__title cap-title animated"
@@ -72,9 +72,9 @@ function Home () {
                     </div>
                   </div>
                   <div className="capability-group no-margin">
-                    <div className="capability-group-logo">
+               {/*     <div className="capability-group-logo">
                       <i className="capa-3"></i>
-                    </div>
+                    </div>*/}
                     <div className="capability-group-wrap">
                       <a
                         className="capability-group-wrap__title cap-title animated"

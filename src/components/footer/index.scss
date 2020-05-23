@@ -1,7 +1,9 @@
 .footer {
   padding: 69px 0 60px 0;
   height: 404px;
-  background: rgba(46, 48, 51, 1);
+  background-image: linear-gradient(0deg,
+          #10182b 0%,
+          #050e28 100%);
   ul {
     overflow: hidden;
   }

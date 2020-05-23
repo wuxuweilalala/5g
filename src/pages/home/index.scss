@@ -11,35 +11,38 @@ ul {
   position: relative;
   .mapLink {
     position: absolute;
-    bottom: -26px;
+    bottom: 69px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 1200px;
   }
   .banner-link {
-    width: 305px;
+  /*  width: 305px;
     height: 42px;
     background-color: #dfe2f5;
-    border-radius: 5px;
-    margin-right: 2px;
+    border-radius: 5px;*/
+    margin-right: 132px;
+    &:nth-child(odd) {
+      margin-bottom: 100px;
+    }
     a {
       display: block;
-      color: #3560a1;
+      color: #fff;
       p {
-        text-align: center;
+        text-align: left;
         font-family: MicrosoftYaHei;
-        line-height: 42px;
+        line-height: 26px;
         font-size: 14px;
         font-weight: normal;
         font-stretch: normal;
         letter-spacing: 0px;
       }
     }
-    a:hover {
-      color: #fff; /*已访问的链接颜色*/
+  /*  a:hover {
+      color: #fff; !*已访问的链接颜色*!
       background-color: #1c5fc2;
-    }
+    }*/
   }
 }
 .secBox {
@@ -139,14 +142,68 @@ ul {
     }
     &-group {
       width: 378px;
-      height: 160px;
-      background-color: #1c5fc2;
+      height: 320px;
+      border-style: solid;
+      border-width: 3px;
+      border-image-source: linear-gradient(0deg,
+              rgba(0, 89, 255, 0.3) 0%,
+              rgba(0, 89, 255, 0.3)100%);
+      border-image-slice: 1;
       box-shadow: 0px 6px 16px 0px #c1c1c1;
       display: flex;
       vertical-align: top;
       margin-right: 28px;
       position: relative;
-      overflow: hidden;
+    /*  overflow: hidden;*/
+      transition: transform .3s;
+      &:nth-child(1) {
+        &:before {
+          content:'';
+          width: 198px;
+          height: 143px;
+          background-image: url("../../assets/img/home/data.png") ;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          position: absolute;
+          top: -85px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      &:nth-child(2) {
+        &:before {
+          content:'';
+          width: 198px;
+          height: 160px;
+          background-image: url("../../assets/img/home/rights.png") ;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          position: absolute;
+          top: -101px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      &:nth-child(3) {
+        &:before {
+          content:'';
+          width: 198px;
+          height: 140px;
+          background-image: url("../../assets/img/home/apply.png") ;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          position: absolute;
+          top: -85px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      &:hover {
+        border-image-source: linear-gradient(0deg,
+                #0059ff 0%,
+                #00fcff 100%);
+        transform: translateY(-30px);
+      }
       &-logo {
         display: flex;
         justify-content: center;
@@ -185,13 +242,22 @@ ul {
         align-items: center;
         flex: 1;
         &__title {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          width: 199px;
+          height: 46px;
           font-family: MicrosoftYaHei;
           font-size: 24px;
           font-weight: normal;
           font-stretch: normal;
-          line-height: 24px;
+          margin-top: 84px;
+          /*line-height: 24px;*/
           letter-spacing: 0px;
           color: #ffffff;
+          background-image: url("../../assets/img/home/capability-group-wrap__title_bg.png") ;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
         }
         &__content {
           font-family: MicrosoftYaHei;
@@ -206,7 +272,7 @@ ul {
         }
       }
       .cap-content {
-        position: absolute;
+       /* position: absolute;*/
         padding: 20px;
         width: 288px;
         height: 160px;
