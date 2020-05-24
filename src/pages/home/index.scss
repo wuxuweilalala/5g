@@ -46,7 +46,7 @@ ul {
   }
 }
 .secBox {
-  padding: 0px 0 56px;
+  padding: 0px 0 156px;
   position: relative;
 }
 .sec {
@@ -59,7 +59,7 @@ ul {
     font-stretch: normal;
     line-height: 28px;
     letter-spacing: 0px;
-    color: #264890;
+    color: #fff;
     text-align: center;
     &-w {
       color: #fff;
@@ -132,7 +132,7 @@ ul {
 }
 
 .sec-capability {
-  background: url("../../assets/img/v2/bg1.png") no-repeat;
+  background: url("../../assets/img/home/set-bg.png") no-repeat;
   background-size: cover;
   padding-bottom: 5px;
   .capability {
@@ -149,7 +149,7 @@ ul {
               rgba(0, 89, 255, 0.3) 0%,
               rgba(0, 89, 255, 0.3)100%);
       border-image-slice: 1;
-      box-shadow: 0px 6px 16px 0px #c1c1c1;
+/*      box-shadow: 0px 6px 16px 0px #c1c1c1;*/
       display: flex;
       vertical-align: top;
       margin-right: 28px;
@@ -310,10 +310,70 @@ ul {
   }
 }
 .sec-resource {
-  background: url("../../assets/img/v2/bg2.png") no-repeat;
-  background-size: cover;
-  text-align: center;
-  padding-bottom: 104px;
+  background-image: url("../../assets/img/home/industry.png");
+  background-size: 100% 100%;
+  height: 889px;
+  text-align: left;
+/*  padding-bottom: 104px;*/
+  color: #fff;
+  display: flex;
+  .leftSide {
+    width: 34vw;
+    padding-left: 16.9vw;
+    padding-top: 190px;
+    .active-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 220px;
+      height: 43px;
+      background-image: url("../../assets/img/home/resourse-title.png");
+      background-size: 100% 100%;
+    }
+    .resource-title {
+      font-size: 22px;
+      margin-bottom: 82px;
+      cursor: pointer;
+    }
+  }
+  .rightSide {
+    width: 66vw;
+    padding-top: 70px;
+    padding-left: 100px;
+    padding-right: 18.9vw;
+    .sec-tit {
+      text-align: left;
+      margin-bottom: 234px;
+      margin-left: 111px;
+    }
+    .right-resource-title {
+      color: #fff;
+      font-size: 26px;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 54px;
+      &:before {
+        content:"";
+        position: absolute;
+        bottom: 0;
+        width: 178px;
+        height: 10px;
+        background-image: url("../../assets/img/home/industry-h1.png");
+        background-size: 100% 100%;
+        z-index: -1;
+      }
+    }
+    p {
+      font-size: 22px;
+      line-height: 52px;
+      margin-bottom: 101px;
+    }
+    img  {
+      display: block;
+      margin-left: auto;
+      cursor: pointer;
+    }
+  }
   .resource {
     &-left,
     &-right {
@@ -554,12 +614,16 @@ ul {
 .skill {
   padding: 70px 0 43px 0;
   overflow: hidden;
-  background: url("../../assets/img/v2/bg3.png") no-repeat;
+  background: url("../../assets/img/home/tech-bg.png") no-repeat;
   background-size: cover;
+  .layout {
+    width: 1247px;
+  }
+
   h1 {
     font-size: 34px;
     font-family: Microsoft YaHei;
-    color: rgba(38, 72, 144, 1);
+    color: #fff;
     line-height: 34px;
     height: 34px;
     text-align: center;
@@ -570,22 +634,74 @@ ul {
     display: flex;
     flex-flow: row;
     flex-grow: 3;
-    justify-content: space-between;
+    height: 646px;
+    transition: height 1s;
+/*    justify-content: space-between;*/
     flex-wrap: wrap;
+    .addBox {
+      background: rgb(0,89,255);
+      h5 {
+        visibility: hidden;
+      }
+      .hoverBox {
+        visibility: visible;
+      }
+    }
+  }
+  .see-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    width: 226px;
+    height: 51px;
+    color:#fff;
+    font-size: 20px;
+    background: url("../../assets/img/home/see-more.png") no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
   }
   &-card {
-    width: 328px;
-    height: 320px;
+    width: 409px;
+    height: 304px;
+    margin-bottom: 19px;
+    position: relative;
+    margin-right: 10px;
+    .hoverBox {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      visibility: hidden;
+      color: #fff;
+      padding-top: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: left;
+      h2 {
+        font-size: 26px;
+        color: #fff;
+      }
+      p {
+        line-height: 35.5px;
+      }
+    }
     .skill-content {
       width: 100%;
       height: 197px;
-      margin-top: 97px;
+      margin-top: 174px;
       // padding: 2px 30px 0;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       position: relative;
       overflow: hidden;
+      padding: 0 19px;
+      .right-arrow {
+        width: 37px;
+      }
       h5 {
         font-family: MicrosoftYaHei;
         font-size: 24px;
@@ -621,7 +737,7 @@ ul {
       }
     }
   }
-  &-card .skill-content:hover {
+/*  &-card .skill-content:hover {
     h5 {
       animation-name: fadeOut;
     }
@@ -637,42 +753,42 @@ ul {
       top: 3px !important;
       animation-name: fadeIn;
     }
-  }
+  }*/
   // &-card:hover {
   //   transform: translate3d(0,-3px,0);
   //   // box-shadow: 0 4px 20px 0 rgba(0,0,0,.15);
   // }
   &-bg-1 {
-    background: url("../../assets/img/v2/skill-1.png") no-repeat;
-    background-size: cover;
+    background: url("../../assets/img/home/skill-1.png") no-repeat;
+    background-size: 100% 100%;
   }
   &-bg-2 {
-    background: url("../../assets/img/v2/skill-2.png") no-repeat;
-    background-size: cover;
+    background: url("../../assets/img/home/skill-2.png") no-repeat;
+    background-size: 100% 100%;
   }
   &-bg-3 {
-    background: url("../../assets/img/v2/skill-3.png") no-repeat;
-    background-size: cover;
+    background: url("../../assets/img/home/skill-3.png") no-repeat;
+    background-size: 100% 100%;
   }
   &-bg-4 {
-    background: url("../../assets/img/v2/skill-4.png") no-repeat;
-    background-size: cover;
+    background: url("../../assets/img/home/skill-4.png") no-repeat;
+    background-size: 100% 100%;
   }
   &-bg-5 {
-    background: url("../../assets/img/v2/skill-5.png") no-repeat;
-    background-size: cover;
+    background: url("../../assets/img/home/skill-5.png") no-repeat;
+    background-size: 100% 100%;
   }
   &-bg-6 {
-    background: url("../../assets/img/v2/skill-6.png") no-repeat;
-    background-size: cover;
+    background: url("../../assets/img/home/skill-6.png") no-repeat;
+    background-size: 100% 100%;
   }
   &-bg-7 {
-    background: url("../../assets/img/v2/skill-7.png") no-repeat;
-    background-size: cover;
+    background: url("../../assets/img/home/skill-7.png") no-repeat;
+    background-size: 100% 100%;
   }
   &-bg-8 {
-    background: url("../../assets/img/v2/skill-8.png") no-repeat;
-    background-size: cover;
+    background: url("../../assets/img/home/skill-8.png") no-repeat;
+    background-size: 100% 100%;
   }
   .no-marin {
     margin: 0;
@@ -681,26 +797,33 @@ ul {
 .Access {
   padding: 70px 0;
   overflow: hidden;
-  background: url("../../assets/img/v2/bg4.png") no-repeat;
-  background-size: cover;
+  background-image: url('../../assets/img/home/access.png');
+  background-size: 100% 100%;
+  .layout {
+    background-image: url('../../assets/img/home/access-bg.png');
+    background-size: 100% 100%;
+    width: 1028px;
+    height: 500px;
+  }
+/*  background: url("../../assets/img/v2/bg4.png") no-repeat;
+  background-size: cover;*/
   position: relative;
   h1 {
     font-size: 34px;
     font-family: Microsoft YaHei;
-    color: rgba(38, 72, 144, 1);
+    color: #fff;
     line-height: 34px;
     margin-bottom: 58px;
   }
   &-ul {
     display: flex;
+    justify-content: space-between;
     overflow: hidden;
     .Access-col {
-      width: 377px;
       height: 235px;
-      background: rgba(255, 255, 255, 1);
+    /*  background: rgba(255, 255, 255, 1);
       box-shadow: 0px 4px 9px 0px rgba(219, 225, 239, 1);
-      float: left;
-      padding: 50px 49px 50px 0px;
+      float: left;*/
       .Access-number-1 {
         width: 58px;
         height: 135px;
@@ -736,14 +859,50 @@ ul {
         float: left;
         margin: 0 7px 0 24px;
       }
+      .Access-col-1 {
+        background-image: url("../../assets/img/home/col-1.png");
+        background-size: 100% 100%;
+        &:after {
+          display: block;
+          content: "";
+          width: 335px;
+          height: 1px;
+          position: absolute;
+          background-color: rgba(255, 255, 255, 0.5);
+          top: 50%;
+          left: 106%;
+          transform: translateY(-50%);
+        }
+      }
+      .Access-col-2 {
+        background-image: url("../../assets/img/home/col-2.png");
+        background-size: 100% 100%;
+        &:after {
+          display: block;
+          content: "";
+          width: 335px;
+          height: 1px;
+          position: absolute;
+          background-color: rgba(255, 255, 255, 0.5);
+          top: 50%;
+          left: 113%;
+          transform: translateY(-50%);
+        }
+      }
+      .Access-col-3 {
+        background-image: url("../../assets/img/home/col-3.png");
+        background-size: 100% 100%;
+      }
+
       .Access-col {
-        width: 94px;
-        height: 94px;
-        background: rgba(28, 95, 194, 1);
-        border-radius: 50%;
-        margin: 20px 0 21px 0px;
+        width: 104px;
+        height: 120px;
         position: relative;
-        &-1 {
+        img  {
+          width: 100%;
+          height: 100%;
+        }
+      /*  &-1 {
           display: inline-block;
           width: 52px;
           height: 60px;
@@ -772,20 +931,24 @@ ul {
           top: 50%;
           transform: translate(-50%, -50%);
           background: url("../../assets/img/v2/access-3.png") no-repeat;
-        }
+        }*/
       }
       .Access-content {
         float: left;
         margin: 38px 0 35px 13px;
         h2 {
-          font-size: 24px;
           font-family: Microsoft YaHei;
           font-weight: 400;
-          color: rgba(57, 61, 70, 1);
+          color: #ccc;
           line-height: 19px;
           margin-bottom: 15px;
         }
+        .step {
+          font-size: 20px;
+        }
         .contentColor {
+          font-size: 22px;
+          color: #fff;
           font-weight: 600;
         }
       }
@@ -820,15 +983,22 @@ ul {
       }
     }
   }
-  .ant-btn {
-    width: 376px;
-    height: 79px;
-    background: rgba(28, 95, 194, 1);
+  .handle-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 326px;
+    height: 51px;
+    background-image: url("../../assets/img/home/apply-info.png");
+    background-size: 100% 100%;
+ /*   background: rgba(28, 95, 194, 1);*/
     font-size: 20px;
     font-family: Microsoft YaHei;
     font-weight: 400;
     color: rgba(255, 255, 255, 1);
     line-height: 79px;
-    margin-top: 60px;
+    margin-top: 122px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

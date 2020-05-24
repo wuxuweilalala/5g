@@ -10,19 +10,22 @@ export default class Banner extends Component {
     } = this.props;
     return (
       // autoplay
-        <Carousel >
+        <div className="banner-wrapper">
           {/* <div className='banner-bg'  style={{ backgroundImage: "url(" + img + ")"}}>
           </div> */}
           <div className='banner-bg'>
-            <img src={require('./img/banner-BG.png')}></img>
+            <img src={require('./img/banner-bg.png')}></img>
           </div>
+            <div className="banner-gif">
+                <img src={require('./img/banner.gif')} alt=""/>
+            </div>
       {/*    <div className='banner-bg'>
           <img src={require('./img/bg-3.png')}></img>
           </div>
           <div className='banner-bg'>
           <img src={require('./img/bg-4.png')}></img>
           </div>*/}
-        </Carousel>
+        </div>
     );
   }
 }

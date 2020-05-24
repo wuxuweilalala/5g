@@ -10,8 +10,40 @@ import { Button } from "antd";
 
 
 function Home () {
+  const [title] = React.useState([
+    {
+      name:'5G多媒体内容',
+      dec:'5G的高带宽和4K/8K显示的快速发展，将推动超高清视听时代的到来。长视频、\n' +
+          '短视频、直播、赛事等都会迎来新的变化和发展5G的高带宽和4K/8K显示的快速\n' +
+          '发展，将推动超高清视听时代的到来。长视频、短视频、直播、赛事等都会迎来\n' +
+          '新的变化和发展，5G的高带宽和4K/8K显示的快速发展，将推动超高清视听时代\n' +
+          '的到来。长视频。'
+    },
+    {
+      name:'5G音视频技术',
+      dec:'5G优化了实时音视频服务，5G的实时高带宽和低时延的特性，和人工智能的结合，会进一步拓展音视频技术的能力范围，深刻影响视频制作、视频直播、在线教育、视频社交、游戏语音、物联网、家庭陪护等领域。'
+    },
+    {
+      name:'5G交通出行',
+      dec:'5G网络和边缘计算结合V2X、高精度定位等能力，能为交通出行的智能化赋予关键能力，为用户更好更全面的掌握实时路况信息，自动驾驶更智能。'
+    },
+    {
+      name:'5G生活民生',
+      dec:'5G将升级重构教育、医疗、零售、家居等。基于5G网络的超清视频有各种应用场景，包括远程超清直播、远程安防监控、远程超清医疗、商业性远程现场实时展示及街景采集等。'
+    },
+    {
+      name:'5G工业互联网',
+      dec:'5G能满足工业海量传感器的接入和控制管理需求，实现大带宽和低时延的网络连接和数据传输，使得工业自动化成为可能。'
+    },
+    {
+      name:'5G虚拟/增强现实',
+      dec:'虚拟现实（VR）和增强现实（AR）是一种彻底颠覆传统人机交互内容的变革型技术。高质量的VR/AR内容处理走向云端，满足用户日益增长的体验要求的同时降低了设备价格，VR/AR将成为5G网络最具潜力的大流量业务。'
+    }
+    ]
+  );
+  const [activeResourceTitle,setActiveResourceTitle] = React.useState(0)
   useEffect(() => {
-    var a = document.querySelectorAll(".industryHome-item");
+/*    var a = document.querySelectorAll(".industryHome-item");
     a.forEach((item) => {
       item.addEventListener("mouseover", function (e) {
         for (const el of item.parentNode.children) {
@@ -19,8 +51,35 @@ function Home () {
         }
         item.classList.add("moveBox");
       });
-    });
-  }, [])
+    });*/
+
+    const skillCard = document.querySelectorAll('.skill-card');
+    skillCard.forEach((item,index)=>{
+      item.addEventListener('mouseover',(e)=>{
+        skillCard[index].classList.add('addBox')
+      })
+      item.addEventListener('mouseout',(e)=>{
+        skillCard[index].classList.remove('addBox')
+      })
+    })
+
+  }, []);
+  const seeMore =()=>{
+    const text = document.querySelector('.see-more').innerText
+    if(text === '查看更多') {
+      document.querySelector('.skill-ul').style.height = 950 + 'px';
+      document.querySelector('.see-more').innerText = '收起';
+    }
+    if(text === '收起') {
+      document.querySelector('.skill-ul').style.height = 646 + 'px';
+      document.querySelector('.see-more').innerText = '查看更多';
+    }
+  };
+  const titleClick =(item,index)=>{
+    setActiveResourceTitle(index)
+    console.log(item);
+    console.log(index);
+  }
     return (
       <div>
         <Header />
@@ -101,18 +160,14 @@ function Home () {
             </div>
           </div>
 
-          <div className="sec sec-resource">
-            <div className="layout">
-              <div className="secBox">
-                <h2 className="sec-tit">5G行业应用</h2>
+          <div className="sec-resource">
+           {/*   <div className="">
+
                 <a className="sec-more" href="/industry">
                   查看更多
                 </a>
-              </div>
-              <div className="sec-cont layout">
-                <div className="industryHome">
-                  {/* <a */}
-                  <a
+              </div>*/}
+                {/*  <a
                     className="industryHome-item animated"
                     href="/industry#indu-bg1"
                   >
@@ -125,15 +180,15 @@ function Home () {
                       5G的高带宽和4K/8K显示的快速发展，将推动超高清视听时代的到来。长视频、短视频、直播、赛事等都会迎来新的变化和发展。
                     </p>
                   </a>
-                  {/* </div> */}
+                   </div>
                   <div className="industryHome-item industryHome-video animated moveBox">
-                    {/* <div className="industryHome-item"> */}
-                    {/* <div className="outBox"> */}
-                    {/* <i className="indu-2"></i>
+                     <div className="industryHome-item">
+                     <div className="outBox">
+                     <i className="indu-2"></i>
                       <h2 className="indu-item-name">音视频</h2>
                       <i className="indu-line"></i>
-                    </div> */}
-                    {/* </div> */}
+                    </div>
+                     </div>
                     <a href="/industry#indu-bg10">
                       <div className="induItem2">
                         <div className="industryHome-box">
@@ -196,10 +251,21 @@ function Home () {
                         虚拟现实（VR）和增强现实（AR）是一种彻底颠覆传统人机交互内容的变革型技术。高质量的VR/AR内容处理走向云端，满足用户日益增长的体验要求的同时降低了设备价格，VR/AR将成为5G网络最具潜力的大流量业务。
                       </p>
                     </a>
+                  </div>*/}
+                  <div className="leftSide">
+                    {
+                      title.map((item,index)=>(
+                          <div className={['resource-title',activeResourceTitle === index ? 'active-title' : null].join(' ')} onClick={()=> titleClick(item,index)}>{item.name}</div>
+                      ))
+                    }
+
                   </div>
-                </div>
-              </div>
-            </div>
+                  <div className="rightSide">
+                    <h2 className="sec-tit">5G行业应用</h2>
+                    <h2 className="right-resource-title">{title[activeResourceTitle].name}</h2>
+                    <p>{title[activeResourceTitle].dec}</p>
+                    <img src={require("../../assets/img/home/right-arrow.png")} alt=""/>
+                  </div>
           </div>
 
           {/* <ReactCSSTransitionGroup
@@ -216,7 +282,11 @@ function Home () {
                 <li className="skill-card skill-bg-4">
                   <div className="skill-content">
                     <h5 className="animated">Tencent AI Lab</h5>
-                    <p className="txtFlow animated txt146">
+                    <img className="right-arrow" src={require('../../assets/img/home/right-arrow.png')} alt=""/>
+                  </div>
+                  <div className="hoverBox">
+                    <h2>Tencent AI Lab</h2>
+                    <p className="animated txt146">
                       腾讯企业级人工智能实验室，于2016年4月在深圳成立，目前在中国和美国有70位世界级研究科学家及300余位经验丰富的应用工程师致力于不断提升AI的理解、决策与创造力，向“
                       Make Al Everywhere”的愿景迈进。
                     </p>
@@ -225,7 +295,11 @@ function Home () {
                 <li className="skill-card skill-bg-2">
                   <div className="skill-content">
                     <h5 className="animated">腾讯多媒体实验室</h5>
-                    <p className="txtFlow animated">
+                    <img className="right-arrow" src={require('../../assets/img/home/right-arrow.png')} alt=""/>
+                  </div>
+                  <div className="hoverBox">
+                    <h2>腾讯多媒体实验室</h2>
+                    <p className="animated">
                       腾讯旗下顶尖的音视频通信和处理研发团队，专注于实时音视频通信、音视编解码前沿算法研究、音视频国际标准、计算机视觉图像处理、端到端音视频质量评测。在实时音视频通信和处理技术、音视频国际标准等领域积累了完整的解决方案和领先的技术水平。
                     </p>
                   </div>
@@ -233,9 +307,53 @@ function Home () {
                 <li className="skill-card no-marin skill-bg-5">
                   <div className="skill-content">
                     <h5 className="animated">Tencent Robotics X</h5>
-                    <p className="txtFlow animated txt357">
+                    <img className="right-arrow" src={require('../../assets/img/home/right-arrow.png')} alt=""/>
+                  </div>
+                  <div className="hoverBox">
+                    <h2>Tencent Robotics X</h2>
+                    <p className="animated txt357">
                       腾讯设立的机器人研发实验室( Robotics X)。Robotics X和 AI
                       Lab将会成为腾讯AI产业的双基础支撑部门，进一步探索虚拟世界与真实世界的连接。
+                    </p>
+                  </div>
+                </li>
+                <li className="skill-card skill-bg-6">
+                  <div className="skill-content">
+                    <h5 className="animated">腾讯网络平台部</h5>
+                    <img className="right-arrow" src={require('../../assets/img/home/right-arrow.png')} alt=""/>
+
+                  </div>
+                  <div className="hoverBox">
+                    <h2>腾讯网络平台部</h2>
+                    <p className="animated txt357">
+                      负责腾讯基础网络、云网络、无线与物联oT网络、4G/5G移动网络能力、卫星网络能力的规划设计、产品研发与创新、建设及运营相关工作。
+                    </p>
+                  </div>
+                </li>
+                <li key="amache" className="skill-card  skill-bg-3">
+                  <div className="skill-content">
+                    <h5 className="animated">腾讯START</h5>
+                    <img className="right-arrow" src={require('../../assets/img/home/right-arrow.png')} alt=""/>
+
+                  </div>
+                  <div className="hoverBox">
+                    <h2>腾讯START</h2>
+                    <p className="animated txt146">
+                      让好玩触手可及，降低用户玩游戏的门槛，把好游戏带给更多的用户。结合腾讯与英伟达双方优势，共同打造腾讯
+                      START云游戏平台和构建未来超大型游戏渲染集群系统，给玩家带来更好的游戏体验。
+                    </p>
+                  </div>
+                </li>
+                <li className="skill-card skill-bg-7 no-marin">
+                  <div className="skill-content">
+                    <h5 className="animated">云架构平台部</h5>
+                    <img className="right-arrow" src={require('../../assets/img/home/right-arrow.png')} alt=""/>
+
+                  </div>
+                  <div className="hoverBox">
+                    <h2>云架构平台部</h2>
+                    <p className="animated txt357">
+                      作为技术工程事业群的核心部门，在整个公司业务中发挥着水和电一般不可或缺的重要作用，肩负着当今互联网时代发展最前端的海量信息存储与接入（云服务）的艰巨任务。
                     </p>
                   </div>
                 </li>
@@ -246,29 +364,10 @@ function Home () {
                       腾讯未来网络实验室是中国互联网公司第一支5G技术和应用研究团队，以打造中国互联网界Top网络技术团队为愿景，发挥腾讯应用服务优势，通过能力输出，实现应用驱动5G网络演进的目标。
                     </p>
                   </div>
-                </li>
-                <li className="skill-card skill-bg-6">
-                  <div className="skill-content">
-                    <h5 className="animated">腾讯网络平台部</h5>
-                    <p className="txtFlow animated txt357">
-                      负责腾讯基础网络、云网络、无线与物联oT网络、4G/5G移动网络能力、卫星网络能力的规划设计、产品研发与创新、建设及运营相关工作。
-                    </p>
-                  </div>
-                </li>
-                <li key="amache" className="skill-card no-marin skill-bg-3">
-                  <div className="skill-content">
-                    <h5 className="animated">腾讯START</h5>
-                    <p className="txtFlow animated txt146">
-                      让好玩触手可及，降低用户玩游戏的门槛，把好游戏带给更多的用户。结合腾讯与英伟达双方优势，共同打造腾讯
-                      START云游戏平台和构建未来超大型游戏渲染集群系统，给玩家带来更好的游戏体验。
-                    </p>
-                  </div>
-                </li>
-                <li className="skill-card skill-bg-7">
-                  <div className="skill-content">
-                    <h5 className="animated">云架构平台部</h5>
-                    <p className="txtFlow animated txt357">
-                      作为技术工程事业群的核心部门，在整个公司业务中发挥着水和电一般不可或缺的重要作用，肩负着当今互联网时代发展最前端的海量信息存储与接入（云服务）的艰巨任务。
+                  <div className="hoverBox">
+                    <h2>腾讯未来网络实验室</h2>
+                    <p className=" animated txt146">
+                      腾讯未来网络实验室是中国互联网公司第一支5G技术和应用研究团队，以打造中国互联网界Top网络技术团队为愿景，发挥腾讯应用服务优势，通过能力输出，实现应用驱动5G网络演进的目标。
                     </p>
                   </div>
                 </li>
@@ -277,10 +376,8 @@ function Home () {
                     <h5>更多能力正在接入</h5>
                   </div>
                 </li>
-                <li className="skill-card">
-                  <div className="skill-content"></div>
-                </li>
               </ul>
+              <div className="see-more" onClick={seeMore}>查看更多</div>
             </div>
           </div>
           {/* </ReactCSSTransitionGroup> */}
@@ -290,45 +387,33 @@ function Home () {
               <h1>接入5G中台</h1>
               <ul className="Access-ul">
                 <li className="Access-col">
-                  <p className="Access-number-1">1</p>
-                  <div className="Access-col">
-                    <i className="Access-col-1"></i>
+                  <div className="Access-col Access-col-1">
                   </div>
                   <div className='Access-content'>
-                    <h2>第一步</h2>
+                    <h2 className="step">第一步</h2>
                     <h2 className="contentColor">递交资料</h2>
                   </div>
                 </li>
-                <div className="Access-sjx">
-                  <i></i>
-                </div>
                 <li className="Access-col">
-                  <p className="Access-number-2">2</p>
-                  <div className="Access-col">
-                    <i className="Access-col-2"></i>
+                  <div className="Access-col Access-col-2">
                   </div>
                   <div className='Access-content'>
-                    <h2>第二步</h2>
+                    <h2 className="step">第二步</h2>
                     <h2 className="contentColor">签属协议</h2>
                   </div>
                 </li>
-                <div className="Access-sjx">
-                  <i></i>
-                </div>
                 <li className="Access-col">
-                  <p className="Access-number-3">3</p>
-                  <div className="Access-col">
-                    <i className="Access-col-3"></i>
+                  <div className="Access-col Access-col-3">
                   </div>
                   <div className='Access-content'>
-                    <h2>第三步</h2>
+                    <h2 className="step">第三步</h2>
                     <h2 className="contentColor">绑定场景</h2>
                   </div>
                 </li>
               </ul>
-              <Button type="primary" href="/login">
+              <a className="handle-info" href="/login">
                 立即提交资料，接入5G中台
-              </Button>
+              </a>
             </div>
           </div>
         </div>

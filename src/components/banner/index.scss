@@ -6,6 +6,20 @@
         height: 100%;
     }
   }
+.banner-wrapper {
+    position: relative;
+    .banner-gif {
+        position: absolute;
+       /* width: 734px;
+        height: 594px;*/
+        top: 201px;
+        left: 455px;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
   
 .ant-carousel .slick-slide h3 {
     color: #fff;
