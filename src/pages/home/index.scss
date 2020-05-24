@@ -13,60 +13,30 @@ ul {
     position: absolute;
     bottom: 69px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 1200px;
     &:after {
       content: "";
-      background-image: url("../../assets/img/home/timeline.png");
+      background-image: url("../../assets/img/home/timeline1.gif");
       background-size: 100% 100%;
       width: 98vw;
-      height: 1px;
+      height: 86px;
       position: absolute;
-      top: 72px;
+      top: 35px;
+
     }
   }
   .banner-link {
-  /*  width: 305px;
-    height: 42px;
-    background-color: #dfe2f5;
-    border-radius: 5px;*/
-    margin-right: 132px;
-    position: relative;
-    &:after {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 9px;
-      height: 9px;
-      border-radius: 50%;
-      background-color: #fff;
-    }
     &:nth-child(odd) {
       margin-bottom: 132px;
-      &:after {
-        bottom: -26px;
-        left: 50%;
-      }
+
     }
     &:nth-child(even) {
       margin-top: 50px;
-      &:after {
-        top: -26px;
-        left: 50%;
-      }
+
     }
-    &.active-link {
-      &:after {
-        width: 390px;
-        height: 28px;
-        bottom: -33px;
-        background-image: url("../../assets/img/home/active-timeline.png");
-        background-size: 100% 100%;
-        background-color: unset;
-        left: -100%;
-      }
-    }
+
     a {
       display: block;
       color: #fff;
@@ -80,10 +50,6 @@ ul {
         letter-spacing: 0px;
       }
     }
-  /*  a:hover {
-      color: #fff; !*已访问的链接颜色*!
-      background-color: #1c5fc2;
-    }*/
   }
 }
 .secBox {

@@ -23,6 +23,9 @@ function Header(props) {
     cookie.del('userInfoValue', '/', '5g.sparta.html5.qq.com','-1');
     cookie.del('userInfo', '/', '5g.sparta.html5.qq.com', '-1');
     // document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+  };
+  const test = ()=>{
+    console.log(1)
   }
     return (
       <div
@@ -73,13 +76,13 @@ function Header(props) {
                   </a>
                 </h2>
               </li>
-              {/* <li id="nav-header-hr" className="top-cat">
+               <li id="nav-header-hr" className="top-cat">
                 <h2>
                   <a href="/ctiyPlan" _stat_click_id="header_hr">
                     5G城市计划
                   </a>
                 </h2>
-              </li> */}
+              </li>
               <li id="nav-header-join" className="top-cat">
                 <h2>
                   <a href="/consultation" _stat_click_id="header_joinus">
