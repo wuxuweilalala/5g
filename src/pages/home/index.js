@@ -17,27 +17,33 @@ function Home () {
           '短视频、直播、赛事等都会迎来新的变化和发展5G的高带宽和4K/8K显示的快速\n' +
           '发展，将推动超高清视听时代的到来。长视频、短视频、直播、赛事等都会迎来\n' +
           '新的变化和发展，5G的高带宽和4K/8K显示的快速发展，将推动超高清视听时代\n' +
-          '的到来。长视频。'
+          '的到来。长视频。',
+      href:'/industry#indu-bg1'
     },
     {
       name:'5G音视频技术',
-      dec:'5G优化了实时音视频服务，5G的实时高带宽和低时延的特性，和人工智能的结合，会进一步拓展音视频技术的能力范围，深刻影响视频制作、视频直播、在线教育、视频社交、游戏语音、物联网、家庭陪护等领域。'
+      dec:'5G优化了实时音视频服务，5G的实时高带宽和低时延的特性，和人工智能的结合，会进一步拓展音视频技术的能力范围，深刻影响视频制作、视频直播、在线教育、视频社交、游戏语音、物联网、家庭陪护等领域。',
+      href:'/industry#indu-bg10'
     },
     {
       name:'5G交通出行',
-      dec:'5G网络和边缘计算结合V2X、高精度定位等能力，能为交通出行的智能化赋予关键能力，为用户更好更全面的掌握实时路况信息，自动驾驶更智能。'
+      dec:'5G网络和边缘计算结合V2X、高精度定位等能力，能为交通出行的智能化赋予关键能力，为用户更好更全面的掌握实时路况信息，自动驾驶更智能。',
+      href:'/industry#indu-bg3'
     },
     {
       name:'5G生活民生',
-      dec:'5G将升级重构教育、医疗、零售、家居等。基于5G网络的超清视频有各种应用场景，包括远程超清直播、远程安防监控、远程超清医疗、商业性远程现场实时展示及街景采集等。'
+      dec:'5G将升级重构教育、医疗、零售、家居等。基于5G网络的超清视频有各种应用场景，包括远程超清直播、远程安防监控、远程超清医疗、商业性远程现场实时展示及街景采集等。',
+      href:'/industry#indu-bg5'
     },
     {
       name:'5G工业互联网',
-      dec:'5G能满足工业海量传感器的接入和控制管理需求，实现大带宽和低时延的网络连接和数据传输，使得工业自动化成为可能。'
+      dec:'5G能满足工业海量传感器的接入和控制管理需求，实现大带宽和低时延的网络连接和数据传输，使得工业自动化成为可能。',
+      href:'/industry#indu-bg4'
     },
     {
       name:'5G虚拟/增强现实',
-      dec:'虚拟现实（VR）和增强现实（AR）是一种彻底颠覆传统人机交互内容的变革型技术。高质量的VR/AR内容处理走向云端，满足用户日益增长的体验要求的同时降低了设备价格，VR/AR将成为5G网络最具潜力的大流量业务。'
+      dec:'虚拟现实（VR）和增强现实（AR）是一种彻底颠覆传统人机交互内容的变革型技术。高质量的VR/AR内容处理走向云端，满足用户日益增长的体验要求的同时降低了设备价格，VR/AR将成为5G网络最具潜力的大流量业务。',
+      href:'/industry#indu-bg2'
     }
     ]
   );
@@ -264,7 +270,12 @@ function Home () {
                     <h2 className="sec-tit">5G行业应用</h2>
                     <h2 className="right-resource-title">{title[activeResourceTitle].name}</h2>
                     <p>{title[activeResourceTitle].dec}</p>
-                    <img src={require("../../assets/img/home/right-arrow.png")} alt=""/>
+                    <a
+                        href={title[activeResourceTitle].href}
+                    >
+                      <img src={require("../../assets/img/home/right-arrow.png")} alt=""/>
+                    </a>
+
                   </div>
           </div>
 
@@ -411,6 +422,27 @@ function Home () {
                   </div>
                 </li>
               </ul>
+              <div className="pointWrapper point1">
+                <div className="point"></div>
+              </div>
+              <div className="pointWrapper point2">
+                <div className="point"></div>
+              </div>
+              <div className="pointWrapper point3">
+                <div className="point"></div>
+              </div>
+              <div className="pointWrapper point4">
+                <div className="point"></div>
+              </div>
+              <div className="pointWrapper point5">
+                <div className="point"></div>
+              </div>
+              <div className="pointWrapper point6">
+                <div className="point"></div>
+              </div>
+              <div className="pointWrapper point7">
+                <div className="point"></div>
+              </div>
               <a className="handle-info" href="/login">
                 立即提交资料，接入5G中台
               </a>

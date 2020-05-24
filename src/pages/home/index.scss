@@ -16,6 +16,15 @@ ul {
     justify-content: center;
     align-items: center;
     width: 1200px;
+    &:after {
+      content: "";
+      background-image: url("../../assets/img/home/timeline.png");
+      background-size: 100% 100%;
+      width: 98vw;
+      height: 1px;
+      position: absolute;
+      top: 72px;
+    }
   }
   .banner-link {
   /*  width: 305px;
@@ -23,8 +32,40 @@ ul {
     background-color: #dfe2f5;
     border-radius: 5px;*/
     margin-right: 132px;
+    position: relative;
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background-color: #fff;
+    }
     &:nth-child(odd) {
-      margin-bottom: 100px;
+      margin-bottom: 132px;
+      &:after {
+        bottom: -26px;
+        left: 50%;
+      }
+    }
+    &:nth-child(even) {
+      margin-top: 50px;
+      &:after {
+        top: -26px;
+        left: 50%;
+      }
+    }
+    &.active-link {
+      &:after {
+        width: 390px;
+        height: 28px;
+        bottom: -33px;
+        background-image: url("../../assets/img/home/active-timeline.png");
+        background-size: 100% 100%;
+        background-color: unset;
+        left: -100%;
+      }
     }
     a {
       display: block;
@@ -794,6 +835,16 @@ ul {
     margin: 0;
   }
 }
+@keyframes point {
+  0% {
+    width: 24px;
+    height: 24px;
+  }
+  100% {
+    width: 43px;
+    height: 43px;
+  }
+}
 .Access {
   padding: 70px 0;
   overflow: hidden;
@@ -804,6 +855,53 @@ ul {
     background-size: 100% 100%;
     width: 1028px;
     height: 500px;
+    position: relative;
+    .pointWrapper {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 1px solid rgba(0,56,255,.64);
+      animation: point  linear 1s infinite alternate-reverse;
+      &.point1 {
+        left: 150px;
+        top: 50px;
+      }
+      &.point2{
+        left: 350px;
+        top: 20px;
+      }
+      &.point3 {
+        left: 250px;
+        bottom: 150px;
+      }
+      &.point4 {
+        left: 550px;
+        top: 50px;
+      }
+      &.point5 {
+        left: 400px;
+        top: 220px;
+      }
+      &.point6 {
+        left: 700px;
+        top: 120px;
+      }
+      &.point7 {
+        left: 850px;
+        bottom: 100px;
+      }
+      .point {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 50%;
+        background-color: #0038ff;
+      }
+    }
   }
 /*  background: url("../../assets/img/v2/bg4.png") no-repeat;
   background-size: cover;*/
